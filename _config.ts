@@ -8,7 +8,7 @@ const site = lume({
 });
 site.use(jsx());
 
-for (const path of ["404.html", "_headers"]) {
+for (const path of ["404.html", "_headers", "img", "style"]) {
     site.copy(path)
 }
 

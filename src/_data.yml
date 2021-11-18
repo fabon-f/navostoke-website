@@ -1,0 +1,47 @@
+# default layout
+layout: layouts/layout.tsx
+stylesheet: common
+ogImage: /img/logo.png
+twitterCardType: summary_large_image
+
+series:
+  -
+    name: ロシア語警察24時
+    description: 創作物(主にラノベ・マンガ・アニメ・ゲーム)を題材として、ロシア語などの解説や作品へのツッコミをするシリーズです。
+    books:
+      -
+        name: vol. 1 人名エトセトラ
+        id: russian-police-1
+        published: false
+  -
+    name: その他(非シリーズもの)
+
+externalWorks:
+  -
+    name: 東京大学恋する小惑星同好会
+    works:
+      -
+        name: "#FindOurStars Vol.1"
+        url: https://utkiraracircle.github.io/posts/find-our-stars-1
+        description: 寄稿(評論)
+      -
+        name: "#FindOurStars Vol.2"
+        url: https://utkiraracircle.github.io/posts/find-our-stars-2
+        description: 寄稿(二次創作小説2本)
+  -
+    name: 東京大学きらら同好会
+    works:
+      -
+        name: Micare Vol.1
+        url: https://utkiraracircle.github.io/posts/micare-1
+        description: 寄稿(評論)
+
+
+events:
+  -
+    name: COMITIA139
+    date: "2022-02-20"
+    url: https://www.comitia.co.jp
+    status: 申し込み済み
+    id: comitia139
+    img: { type: webp, src: comitia139_circlecut, width: 200, height: 296, alt: "新刊 ロシア語警察24時 vol. 1 人名エトセトラ 創作者のためのロシア人名講座 アニメなどに出てくるロシア人の名前に関するあれこれ" }
