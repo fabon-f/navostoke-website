@@ -15,6 +15,13 @@ export type Data = {
     children?: React.ReactNode;
 }
 
+export type BuiltinFilters = {
+    md: (content: string, inline?: boolean) => string;
+    njk: (content: string, data?: any) => Promise<string>;
+    url: (path?: string, absolute?: boolean) => string;
+    htmlUrl: (html?: string, absolute?: boolean) => string;
+};
+
 type Event = {
     name: string;
     date: string;

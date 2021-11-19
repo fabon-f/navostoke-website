@@ -1,6 +1,6 @@
 import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
 import { ExternalLink } from "../../../lib/components.tsx"
-import { Data } from "../../types.ts"
+import { Data, BuiltinFilters } from "../../types.ts"
 
 function cssLinks(stylesheet?: string | string[]) {
     if (stylesheet === undefined) {
@@ -12,7 +12,7 @@ function cssLinks(stylesheet?: string | string[]) {
     }
 }
 
-export default (data: Data, filters: Record<string, Function>) => {
+export default (data: Data, filters: BuiltinFilters & Record<string, Function>) => {
     const siteName = "ナヴァストーケ";
     const { children, title, description, url, stylesheet, ogImage, twitterCardType } = data;
     const fullTitle = title ? `${title} | ${siteName}` : siteName;
