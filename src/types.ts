@@ -24,6 +24,8 @@ export type BuiltinFilters = {
     date: (date: Date | number, format: string, opt?: { locale: any, weekStartsOn: 0|1|2|3|4|5|6, firstWeekContainsDate: number, useAdditionalWeekYearTokens: boolean, useAdditionalDayOfYearTokens: boolean }) => string;
 };
 
+export type Filters = Record<string, Function> & BuiltinFilters;
+
 type Event = {
     name: string;
     date: string;
