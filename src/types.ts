@@ -2,7 +2,7 @@ import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
 
 export type Data = {
     events: Event[];
-    series: {name:string,description?:string, books:Book[]}[]
+    series: {name:string,description?:string, books?:Book[]}[]
     externalWorks: Circle[];
 
     title?: string;
