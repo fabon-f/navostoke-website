@@ -39,6 +39,7 @@ type Book = {
     name: string;
     id: string;
     published?: boolean;
+    publishDate: Date;
 }
 
 type Circle = {
