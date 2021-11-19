@@ -29,7 +29,7 @@ export default (data: Data, filters: Filters) => {
         <meta property="og:url" content={filters.url(url, true)} />
         <meta name="twitter:card" content={twitterCardType || "summary"} />
         <meta name="twitter:site" content="@syobon_hinata" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        { [16,32,48,64].map(s => <link rel="icon" href={`/img/favicon${s}.png`} sizes={`${s}x${s}`} />) }
         {cssLinks(stylesheet)}
         <title>{fullTitle}</title>
     </head>
