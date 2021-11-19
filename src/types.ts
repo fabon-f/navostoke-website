@@ -20,6 +20,8 @@ export type BuiltinFilters = {
     njk: (content: string, data?: any) => Promise<string>;
     url: (path?: string, absolute?: boolean) => string;
     htmlUrl: (html?: string, absolute?: boolean) => string;
+
+    date: (date: Date | number, format: string, opt?: { locale: any, weekStartsOn: 0|1|2|3|4|5|6, firstWeekContainsDate: number, useAdditionalWeekYearTokens: boolean, useAdditionalDayOfYearTokens: boolean }) => string;
 };
 
 type Event = {
