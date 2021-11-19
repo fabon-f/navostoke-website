@@ -21,7 +21,7 @@ type Event = {
     url?: string;
     status?: string;
     id?: string;
-    img: any;
+    img: {type: string; src: string};
 }
 
 type Book = {

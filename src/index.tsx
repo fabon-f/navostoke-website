@@ -5,7 +5,7 @@ import { Data } from "./types.ts"
 export const title = "サークル「ナヴァストーケ」";
 export const description = "ふぁぼんの個人サークル「ナヴァストーケ」の公式サイト";
 
-function imageElement(opt: any) {
+function imageElement(opt: {type: string; src: string}) {
     const imgPath= `/img/events/${opt.src}`
     if (opt.type === "webp") {
         return <WebpImage {...opt} src={imgPath} />
