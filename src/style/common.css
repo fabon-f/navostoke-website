@@ -89,3 +89,25 @@ main section {
 .header_nav_links a:hover {
     color: #000;
 }
+
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #161821;
+        color: #d2d4de;
+    }
+    a {
+        color: #91acd1;
+    }
+    .header_nav {
+        background-color: #84a0c6;
+    }
+    #footer {
+        background-color: #89b8c2;
+        color: #161821;
+    }
+    img.transparent-bg-img {
+        background-color: white;
+    }
+}

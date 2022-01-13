@@ -6,9 +6,9 @@ export const ExternalLink = ({href, icon = true, children, ...props}: { href: st
     return <a href={href} target="_blank" rel="noopener noreferrer">{children}{icon && iconElement}</a>;
 }
 
-export const WebpImage = ({ width, height, src, alt }: { width?: string|number, height?: string|number, src: string, alt?: string }) =>
+export const WebpImage = ({ width, height, src, alt, className }: { width?: string|number, height?: string|number, src: string, alt?: string, className?: string }) =>
     <picture>
         <source srcSet={`${src}.webp`} width={width} height={height} type="image/webp" />
         <source srcSet={`${src}.png`} width={width} height={height} type="image/png" />
-        <img src={`${src}.png`} width={width} height={height} alt={alt} />
+        <img src={`${src}.png`} width={width} height={height} alt={alt} className={className} />
     </picture>;

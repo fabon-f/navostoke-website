@@ -39,7 +39,7 @@ export default (data: Data) => {
     const isEventAll = pastEvents.length === pastEventElements.length;
     return <main role="main">
         <div id="center_logo">
-            <WebpImage src="/img/logo" width="772" height="435" alt="ナヴァストーケのアイコン" />
+            <WebpImage src="/img/logo" width="772" height="435" alt="ナヴァストーケのアイコン" className="transparent-bg-img" />
         </div>
         <section>
             <h1>サークル「ナヴァストーケ」</h1>
