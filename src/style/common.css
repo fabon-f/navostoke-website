@@ -92,6 +92,19 @@ main section {
 
 
 
+.background-dark {
+    background-color: #161821;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.logo_gallery {
+    display: flex;
+}
+
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #161821;
@@ -106,8 +119,5 @@ main section {
     #footer {
         background-color: #89b8c2;
         color: #161821;
-    }
-    img.transparent-bg-img {
-        background-color: white;
     }
 }

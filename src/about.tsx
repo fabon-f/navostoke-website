@@ -25,7 +25,16 @@ export default (data: Data) =>
         <section id="special_thanks">
             <h2>Special Thanks</h2>
             <h3>ロゴデザイン: <ExternalLink href="https://awomomiji.tumblr.com">あをもみじ</ExternalLink> さん(サークル「青葉小路」)</h3>
-            <WebpImage src="/img/logo" width="257" height="145" alt="ナヴァストーケのアイコン" className="transparent-bg-img" />
+            <div className="logo_gallery">
+                <figure>
+                    <WebpImage src="/img/logo" width="257" height="145" alt="ナヴァストーケのアイコン(通常)" className="background-white" />
+                    <figcaption>通常ロゴ</figcaption>
+                </figure>
+                <figure>
+                    <WebpImage src="/img/logo_dark_saturated" width="257" height="145" alt="ナヴァストーケのアイコン(ダークテーマ)" className="background-dark" />
+                    <figcaption>ロゴ(ダークテーマ)</figcaption>
+                </figure>
+            </div>
             <p>私の興味の広さ故に、私の個人サークル「ナヴァストーケ」は必然的にさまざまな内容を扱うことになります。これは設立の瞬間から分かっていたことでした。ロゴの使われるジャンルが広い上に、ロゴに使えそうな具体的要素もバラバラ——デザイナー側からすれば相当な無茶振りだったと思うのですが、私が好きなロシア・ソ連と鉄道・船のエッセンスをきれいにまとめていただきました。</p>
             <h4>ロゴタイプ</h4>
             <p>ソ連やロシアの国旗から赤色と青色を選び、私も好きなソ連のデザインのようなレトロさと力強さを出しつつ、どのジャンルにも使えるすっきりとした文字にしてもらいました。欧文書体はモダニズムを元に作られたFuturaだそうです。</p>
