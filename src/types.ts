@@ -32,6 +32,7 @@ type Event = {
     url?: string;
     status?: string;
     id?: string;
+    space?: string;
     img: {type: string; src: string};
 }
 

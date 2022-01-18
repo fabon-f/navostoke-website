@@ -27,6 +27,7 @@ export default (data: Data) => {
             <h3>{event.name}{` (${event.status})` || ""}</h3>
             {event.url && <ExternalLink href={event.url}>イベント公式サイト</ExternalLink>}
             <p>開催日: <time dateTime={event.date}>{`${event.date.replaceAll("-", "/")}`}</time></p>
+            {event.space && <p>スペース: <strong>{event.space}</strong></p>}
             {event.img && <a href={`./events/${event.id}/`}>{imageElement(event.img)}</a>}
             {event.id && <p><a href={`./events/${event.id}/`}>イベント参加情報</a></p>}
         </div>
