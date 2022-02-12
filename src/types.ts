@@ -41,6 +41,7 @@ type Book = {
     id: string;
     published?: boolean;
     publishDate: Date;
+    img?: {type: string; src: string};
 }
 
 type Circle = {

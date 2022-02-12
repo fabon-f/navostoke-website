@@ -14,6 +14,7 @@ series:
         id: russian-police-1
         published: false
         publishDate: 2022-02-20
+        img: { type: webp, src: russian-police-1-cover, width: 200 }
   -
     name: その他(非シリーズもの)
 
