@@ -13,11 +13,16 @@ export default (data: Data) => {
         <h1>COMITIA139{ eventData.status && ` (${eventData.status})` }</h1>
         {eventData.space && <p>スペース: <strong>{eventData.space}</strong></p>}
         <p>{eventData.url && <ExternalLink href={eventData.url}>イベント公式サイト</ExternalLink>}</p>
-        <WebpImage src="/img/events/comitia139_circlecut" alt="新刊 ロシア語警察24時 vol. 1 人名エトセトラ 創作者のためのロシア人名講座 アニメなどに出てくるロシア人の名前に関するあれこれ" />
+        <img src="/img/events/comitia139_oshinagaki.png" alt="新刊 ロシア語警察24時 vol. 1 人名エトセトラ 創作者のためのロシア人名講座 500円" />
 
         <h2>頒布物</h2>
         <ul>
             <li><a href="/works/russian-police-1/">ロシア語警察24時 vol. 1 人名エトセトラ</a> (新刊)</li>
+        </ul>
+
+        <h2>通販その他</h2>
+        <ul>
+            <li><ExternalLink href="https://navostoke.booth.pm/items/3652492">通販(BOOTH)</ExternalLink></li>
         </ul>
     </main>;
 }

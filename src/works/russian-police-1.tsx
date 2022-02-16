@@ -19,4 +19,9 @@ export default (data: Data) =>
             <li>創作者のためのロシア人名入門</li>
             <li>ここが変だよ! オタク作品のロシア人名</li>
         </ul>
+
+        <h2>通販その他</h2>
+        <ul>
+            <li><ExternalLink href="https://navostoke.booth.pm/items/3652492">通販(BOOTH)</ExternalLink></li>
+        </ul>
     </main>;
