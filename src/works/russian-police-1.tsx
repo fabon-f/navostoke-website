@@ -23,5 +23,6 @@ export default (data: Data) =>
         <h2>通販その他</h2>
         <ul>
             <li><ExternalLink href="https://navostoke.booth.pm/items/3652492">通販(BOOTH)</ExternalLink></li>
+            <li><ExternalLink href="https://navostoke.booth.pm/items/3652511">電子版(BOOTH)</ExternalLink></li>
         </ul>
     </main>;
