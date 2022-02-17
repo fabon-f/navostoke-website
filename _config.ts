@@ -10,7 +10,7 @@ const site = lume({
 site.use(jsx());
 site.use(date());
 
-for (const path of ["404.html", "_headers", "img", "style", "favicon.ico"]) {
+for (const path of ["404.html", "_headers", "img", "style", "favicon.ico", "archives"]) {
     site.copy(path)
 }
 
