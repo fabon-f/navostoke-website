@@ -20,24 +20,20 @@ series:
 
 externalWorks:
   -
-    name: 東京大学恋する小惑星同好会
+    name: 東京大学きらら同好会
     works:
       -
         name: "#FindOurStars Vol.1"
         url: https://utkiraracircle.github.io/posts/find-our-stars-1
         description: 寄稿(評論)
       -
-        name: "#FindOurStars Vol.2"
-        url: https://utkiraracircle.github.io/posts/find-our-stars-2
-        description: 寄稿(二次創作小説2本)
-  -
-    name: 東京大学きらら同好会
-    works:
-      -
         name: Micare Vol.1
         url: https://utkiraracircle.github.io/posts/micare-1
         description: 寄稿(評論)
-
+      -
+        name: "#FindOurStars Vol.2"
+        url: https://utkiraracircle.github.io/posts/find-our-stars-2
+        description: 寄稿(二次創作小説2本)
 
 events:
   -
