@@ -48,3 +48,10 @@ events:
     space: お20a
     id: comitia139
     img: { type: png, src: comitia139_oshinagaki.png, width: 400, alt: "新刊 ロシア語警察24時 vol. 1 人名エトセトラ 500円" }
+  -
+    name: コミックマーケット１００
+    date: "2022-08-13"
+    url: https://www.comiket.co.jp/info-a/C100/C100info.html
+    status: 申し込み済み
+    id: c100
+    img: { type: png, src: c100_circlecut.png, width: 400, alt: "新刊: ロシア語・旧ソ連評論本 既刊: 「ロシア語警察24時」シリーズ" }
