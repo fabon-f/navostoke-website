@@ -21,7 +21,7 @@ export default (data: Data, filters: Filters) => {
             {series.description && <p>{series.description}</p>}
             {series.books && series.books.map(book => <div>
                 <p><a href={`./${book.id}/`}>{book.name}</a>{book.published ? ` (${filters.date(book.publishDate, "yyyy/MM/dd")}発行)` : " (未発売)"}</p>
-                {book.img && imageElement(book.img)}
+                {book.img && <a href={`./${book.id}/`}>{imageElement(book.img)}</a>}
             </div>)}
         </div>
     );
