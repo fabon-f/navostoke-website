@@ -104,6 +104,20 @@ main section {
     display: flex;
 }
 
+table.errata {
+    border-collapse: collapse;
+}
+
+.errata td, .errata th {
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #BBB;
+}
+
+.errata th {
+    border-width: 0 0 2px;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -119,5 +133,8 @@ main section {
     #footer {
         background-color: #89b8c2;
         color: #161821;
+    }
+    .errata td, .errata th {
+        border-color: #777;
     }
 }

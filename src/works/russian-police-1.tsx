@@ -25,4 +25,17 @@ export default (data: Data) =>
             <li><ExternalLink href="https://navostoke.booth.pm/items/3652492">通販(BOOTH)</ExternalLink></li>
             <li><ExternalLink href="https://navostoke.booth.pm/items/3652511">電子版(BOOTH)</ExternalLink></li>
         </ul>
+
+        <h2>正誤表</h2>
+        <table className="errata">
+            <thead><tr>
+                <th>版</th><th>ページ</th><th>誤字の箇所</th><th>誤</th><th>正</th>
+            </tr></thead>
+            <tbody>
+                <tr>
+                    <td>初版</td><td>19</td><td>2.1節</td>
+                    <td>アレクサンドル・イヴァノヴナ・ポクルィーシキン</td><td>アレクサンドラ・I・ポクルイーシキン</td>
+                </tr>
+            </tbody>
+        </table>
     </main>;
