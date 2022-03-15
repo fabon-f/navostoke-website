@@ -1,6 +1,11 @@
 # default layout
 layout: layouts/layout.tsx
-stylesheet: common
+stylesheet:
+  - common
+  - https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous-basic.min.css
+script:
+  - https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js
+  - main
 ogImage: /img/logo.png
 twitterCardType: summary_large_image
 

@@ -8,6 +8,7 @@ export type Data = {
     title?: string;
     description?: string;
     stylesheet?: string | string[];
+    script?: string | string[];
     ogImage?: string;
     twitterCardType?: string;
 

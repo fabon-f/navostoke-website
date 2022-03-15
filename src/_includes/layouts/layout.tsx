@@ -3,18 +3,30 @@ import { ExternalLink } from "../../../lib/components.tsx"
 import { Data, Filters } from "../../types.ts"
 
 function cssLinks(stylesheet?: string | string[]) {
+    const cssUrl = (u: string) => u.startsWith("https://") ? u : `/style/${u}.css`
     if (stylesheet === undefined) {
         return undefined;
     } else if (typeof stylesheet === "string") {
-        return <link rel="stylesheet" href={`/style/${stylesheet}.css`} />;
+        return <link rel="stylesheet" href={cssUrl(stylesheet)} />;
     } else {
-        return stylesheet.map(f => <link rel="stylesheet" href={`/style/${f}.css`} />);
+        return stylesheet.map(f => <link rel="stylesheet" href={cssUrl(f)} />);
+    }
+}
+
+function scriptTags(script?: string | string[]) {
+    const jsUrl = (u: string) => u.startsWith("https://") ? u : `/script/${u}.js`
+    if (script === undefined) {
+        return undefined;
+    } else if (typeof script === "string") {
+        return <script src={jsUrl(script)}></script>;
+    } else {
+        return script.map(f => <script src={jsUrl(f)}></script>);
     }
 }
 
 export default (data: Data, filters: Filters) => {
     const siteName = "ナヴァストーケ";
-    const { children, title, description, url, stylesheet, ogImage, twitterCardType } = data;
+    const { children, title, description, url, stylesheet, script, ogImage, twitterCardType } = data;
     const fullTitle = title ? `${title} | ${siteName}` : siteName;
     const defaultDescription = "サークル「ナヴァストーケ」の公式サイト";
     return <html lang="ja">
@@ -54,6 +66,7 @@ export default (data: Data, filters: Filters) => {
                 <p>© 2021-{new Date().getFullYear()} ナヴァストーケ «на востоке»</p>
             </div>
         </footer>
+        {scriptTags(script)}
     </body>
 </html>;
 }
