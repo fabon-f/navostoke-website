@@ -26,6 +26,16 @@ export default (data: Data) =>
             <li><ExternalLink href="https://navostoke.booth.pm/items/3652511">電子版(BOOTH)</ExternalLink></li>
         </ul>
 
+        <h2>サンプル</h2>
+        <div className="book-samples">
+            <ul>
+                <li><a href="/img/works/russian-police-1-sample1.png" data-gallery="sample"><img src="/img/works/russian-police-1-sample1.png" /></a></li>
+                <li><a href="/img/works/russian-police-1-sample2.png" data-gallery="sample"><img src="/img/works/russian-police-1-sample2.png" /></a></li>
+                <li><a href="/img/works/russian-police-1-sample3.png" data-gallery="sample"><img src="/img/works/russian-police-1-sample3.png" /></a></li>
+                <li><a href="/img/works/russian-police-1-sample4.png" data-gallery="sample"><img src="/img/works/russian-police-1-sample4.png" /></a></li>
+            </ul>
+        </div>
+
         <h2>正誤表</h2>
         <table className="errata">
             <thead><tr>

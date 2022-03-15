@@ -27,6 +27,7 @@ main {
 
 img {
     max-width: 100%;
+    vertical-align: top;
 }
 
 
@@ -119,6 +120,19 @@ table.errata {
     border-width: 0 0 2px;
 }
 
+.book-samples ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-samples li {
+    list-style: none;
+    width: 22%;
+    margin: 5px;
+    min-width: 200px;
+    border: 1px solid #000;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #161821;
@@ -137,4 +151,25 @@ table.errata {
     .errata td, .errata th {
         border-color: #777;
     }
+    .book-samples li {
+        border: 1px solid #FFF;
+    }
+}
+
+.lum-lightbox-image-wrapper {
+    -webkit-overflow-scrolling: touch !important;
+    display: flex !important;
+    overflow: auto !important;
+}
+.lum-lightbox-caption {
+    bottom: 0 !important;
+    position: absolute !important;
+    width: 100%  !important;
+}
+.lum-lightbox-position-helper {
+    margin: auto  !important;
+}
+.lum-lightbox-inner img {
+    max-height: none !important;
+    max-width: 200vw !important;
 }
