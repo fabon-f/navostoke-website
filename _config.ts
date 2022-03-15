@@ -2,6 +2,7 @@ import lume from "lume/mod.ts";
 import { Page } from "lume/core.ts"
 import jsx from "lume/plugins/jsx.ts";
 import date from "lume/plugins/date.ts";
+import esbuild from "lume/plugins/esbuild.ts";
 
 const site = lume({
     src: "src",
@@ -9,6 +10,18 @@ const site = lume({
 });
 site.use(jsx());
 site.use(date());
+site.use(esbuild({
+    options: {
+        entryPoints: ["script/main.ts"],
+        bundle: true,
+        format: "iife",
+        minify: true,
+        platform: "browser",
+        target: "esnext",
+        incremental: true,
+        treeShaking: true
+    }
+}));
 
 for (const path of ["404.html", "_headers", "img", "style", "favicon.ico", "archives"]) {
     site.copy(path)
