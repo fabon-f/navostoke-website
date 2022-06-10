@@ -23,5 +23,11 @@ export default (data: Data) => {
         {eventData.space && <p>スペース: <strong>{eventData.space}</strong></p>}
         <p>{eventData.url && <ExternalLink href={eventData.url}>イベント公式サイト</ExternalLink>}</p>
         {imageElement(eventData.img)}
+
+        <h2>頒布物</h2>
+        <ul>
+            <li>新刊 (予定)</li>
+            <li><a href="/works/russian-police-1/">ロシア語警察24時 vol. 1 人名エトセトラ</a> (既刊)</li>
+        </ul>
     </main>;
 }
