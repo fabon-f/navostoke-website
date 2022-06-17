@@ -3,6 +3,7 @@ import { Page } from "lume/core.ts"
 import jsx from "lume/plugins/jsx.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
+import parcelCss from "lume/plugins/parcel_css.ts";
 
 const site = lume({
     src: "src",
@@ -22,8 +23,14 @@ site.use(esbuild({
         treeShaking: true
     }
 }));
+site.use(parcelCss({
+    options: {
+        analyzeDependencies: true,
+        minify: true
+    }
+}));
 
-for (const path of ["404.html", "_headers", "img", "style", "favicon.ico", "archives"]) {
+for (const path of ["404.html", "_headers", "img", "favicon.ico", "archives"]) {
     site.copy(path)
 }
 
