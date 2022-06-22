@@ -5,7 +5,9 @@ export function getEventData(data: Data) {
     if (paths[1] !== "events") {
         throw new Error("invalid event page url");
     }
-    return data.events.find(e => e.id === paths[2]);
+    const event = data.events.find(e => e.id === paths[2]);
+    if (!event) { throw new Error("the event unavailable"); }
+    return event;
 }
 
 export function getBookData(data: Data) {

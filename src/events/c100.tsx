@@ -17,7 +17,6 @@ function imageElement(opt: {type: string; src: string}) {
 
 export default (data: Data) => {
     const eventData = getEventData(data);
-    if (!eventData) { throw new Error("event not found"); }
     return <main role="main">
         <h1>コミックマーケット100{ eventData.status && ` (${eventData.status})` }</h1>
         {eventData.space && <p>スペース: <strong>{eventData.space}</strong></p>}
