@@ -1,4 +1,5 @@
 import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
+import type { Helper, Data as LumeData } from "lume/core.ts";
 
 export type Data = {
     events: Event[];
@@ -18,14 +19,14 @@ export type Data = {
 
 export type BuiltinFilters = {
     md: (content: string, inline?: boolean) => string;
-    njk: (content: string, data?: any) => Promise<string>;
+    njk: (content: string, data?: LumeData) => Promise<string>;
     url: (path?: string, absolute?: boolean) => string;
     htmlUrl: (html?: string, absolute?: boolean) => string;
 
-    date: (date: Date | number, format: string, opt?: { locale: any, weekStartsOn: 0|1|2|3|4|5|6, firstWeekContainsDate: number, useAdditionalWeekYearTokens: boolean, useAdditionalDayOfYearTokens: boolean }) => string;
+    date: (date: Date | string, format?: string, locale?: string) => string;
 };
 
-export type Filters = Record<string, Function> & BuiltinFilters;
+export type Filters = Record<string, Helper> & BuiltinFilters;
 
 type Event = {
     name: string;
