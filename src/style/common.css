@@ -139,6 +139,30 @@ table.errata {
     border: 1px solid #000;
 }
 
+table.book-info {
+    border-collapse: collapse;
+}
+
+.book-info td, .book-info th {
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #BBB;
+}
+
+.book-info th {
+    font-weight: bold;
+}
+
+#citation-exporter {
+    margin-top: 3em;
+}
+#citation-exporter textarea {
+    height: 7em;
+    width: 50em;
+    max-width: 90%;
+}
+
 [data-gallery] {
     cursor: zoom-in;
 }
@@ -163,6 +187,9 @@ table.errata {
     }
     .book-samples li {
         border: 1px solid #FFF;
+    }
+    .book-info td, .book-info th {
+        border-color: #777;
     }
 }
 

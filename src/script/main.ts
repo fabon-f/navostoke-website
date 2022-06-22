@@ -21,3 +21,10 @@ for (const elem of document.querySelectorAll("a[data-gallery]")) {
 for (const [_key, elems] of Object.entries(table)) {
     elems.length == 1 ? new Luminous(elems[0]) : new LuminousGallery(elems);
 }
+
+for (const textarea of document.querySelectorAll("textarea[readonly]")) {
+    if (!(textarea instanceof HTMLTextAreaElement)) { throw new Error(); }
+    textarea.addEventListener("click", () => {
+        textarea.select();
+    });
+}

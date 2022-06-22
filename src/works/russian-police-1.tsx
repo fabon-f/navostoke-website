@@ -1,13 +1,23 @@
 import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
 import { ExternalLink, WebpImage } from "../../lib/components.tsx";
-import { Data } from "../types.ts";
+import { getBookData, buildBibtexCitation } from "../../lib/helpers.ts";
+import { Data, Filters } from "../types.ts";
 
 export const title = "ロシア語警察24時 vol. 1 人名エトセトラ";
 export const description = "「ロシア語警察24時 vol. 1 人名エトセトラ」の紹介ページ";
 export const ogImage = "/img/works/russian-police-1-cover.png"
 
-export default (data: Data) =>
-    <main role="main">
+
+export default (data: Data, filters: Filters) => {
+    const bookData = getBookData(data);
+    const bibtexInfo = buildBibtexCitation({
+        bookId: bookData.id,
+        title: title,
+        bookUrl: filters.url(data.url, true),
+        publishDate: bookData.publishDate
+    });
+
+    return <main role="main">
         <h1>ロシア語警察24時 vol. 1 人名エトセトラ</h1>
         <WebpImage src="/img/works/russian-police-1-cover" width="300" />
         <p>ロシア語を学ぶ筆者による、「オタク趣味×ロシア語」の同人誌です。</p>
@@ -48,4 +58,20 @@ export default (data: Data) =>
                 </tr>
             </tbody>
         </table>
-    </main>;
+
+        <h2>書誌情報</h2>
+        <table className="book-info">
+            <tbody>
+                <tr><th>タイトル</th><td>{title}</td></tr>
+                <tr><th>発行日</th><td>{filters.date(bookData.publishDate, "yyyy/MM/dd")}</td></tr>
+                <tr><th>体裁</th><td>B5サイズ、24ページ、本文グレースケール</td></tr>
+                <tr><th>ISDN</th><td><ExternalLink href="https://isdn.jp/2784548637017">278-4-548637-01-7</ExternalLink></td></tr>
+            </tbody>
+        </table>
+
+        <details id="citation-exporter">
+            <summary>書誌情報のエクスポート (BibTeX)</summary>
+            <textarea readOnly>{bibtexInfo}</textarea>
+        </details>
+    </main>
+};
