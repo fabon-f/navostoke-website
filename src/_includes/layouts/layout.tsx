@@ -52,6 +52,7 @@ export default (data: Data, filters: Filters) => {
                 <nav>
                     <ul className="header_nav_links">
                         <li><a href="/works/">作品</a></li>
+                        <li><a href="/events/">イベント情報</a></li>
                         <li><a href="/about/">サークル概要</a></li>
                         <li><a href="/contact/">連絡先・リンク</a></li>
                         <li><ExternalLink href="https://navostoke.booth.pm" icon={false}>通販・DL販売</ExternalLink></li>
