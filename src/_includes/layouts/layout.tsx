@@ -48,7 +48,7 @@ export default (data: Data, filters: Filters) => {
     <body>
         <header className="header_nav">
             <div className="header_nav_inner">
-                <a href="/"><img src="/img/logotype.svg" alt="ナヴァストーケ トップページ" height="60" width="160" /></a>
+                <a href="/" className="header_nav_top"><img src="/img/logotype.svg" alt="ナヴァストーケ トップページ" height="60" width="160" /></a>
                 <nav>
                     <ul className="header_nav_links">
                         <li><a href="/works/">作品</a></li>

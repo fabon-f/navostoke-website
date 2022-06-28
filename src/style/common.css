@@ -71,6 +71,10 @@ main section {
     background-color: #c0cdee;
 }
 
+.header_nav_top {
+    padding: 4px;
+}
+
 .header_nav_inner {
     display: flex;
     justify-content: space-between;
