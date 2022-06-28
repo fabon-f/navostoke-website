@@ -4,7 +4,6 @@ import type { Helper, Data as LumeData } from "lume/core.ts";
 export type Data = {
     events: Event[];
     series: {name:string,description?:string, books?:Book[]}[]
-    externalWorks: Circle[];
 
     title?: string;
     description?: string;
@@ -44,9 +43,4 @@ type Book = {
     published?: boolean;
     publishDate: Date;
     img?: {type: string; src: string};
-}
-
-type Circle = {
-    name: string;
-    works: {name:string;url:string;description:string}[];
 }

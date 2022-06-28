@@ -23,23 +23,6 @@ series:
   -
     name: その他(非シリーズもの)
 
-externalWorks:
-  -
-    name: 東京大学きらら同好会
-    works:
-      -
-        name: "#FindOurStars Vol.1"
-        url: https://utkiraracircle.github.io/posts/find-our-stars-1
-        description: 寄稿(評論「東大生猪瀬舞概念」)
-      -
-        name: Micare Vol.1
-        url: https://utkiraracircle.github.io/posts/micare-1
-        description: 寄稿(評論「まちカドまぞく vs. ウクライナ語警察」)
-      -
-        name: "#FindOurStars Vol.2"
-        url: https://utkiraracircle.github.io/posts/find-our-stars-2
-        description: 寄稿(二次創作小説「ナナチカ探偵団と不可能な虹」「拝啓、海の向こうの空へ」)
-
 events:
   -
     name: COMITIA139
