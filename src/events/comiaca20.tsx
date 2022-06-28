@@ -1,5 +1,5 @@
 import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
-import { ExternalLink, WebpImage } from "../../lib/components.tsx";
+import { ExternalLink, WebpImage, DateExpression } from "../../lib/components.tsx";
 import { getEventData } from "../../lib/helpers.ts";
 import { Data } from "../types.ts";
 
@@ -10,6 +10,7 @@ export default (data: Data) => {
     const eventData = getEventData(data);
     return <main role="main">
         <h1>コミックアカデミー20{ eventData.status && ` (${eventData.status})` }</h1>
+        <p>開催日: <DateExpression date={eventData.date} /></p>
         {eventData.space && <p>スペース: <strong>{eventData.space}</strong> (ナヴァストーケ+青葉小路)</p>}
         <p>{eventData.url && <ExternalLink href={eventData.url}>イベント公式サイト</ExternalLink>}</p>
 
