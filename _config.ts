@@ -30,7 +30,7 @@ site.use(parcelCss({
     }
 }));
 
-for (const path of ["404.html", "_headers", "img", "favicon.ico", "archives"]) {
+for (const path of ["_headers", "img", "favicon.ico", "archives"]) {
     site.copy(path)
 }
 
