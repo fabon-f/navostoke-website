@@ -32,12 +32,6 @@ export default (data: Data) => {
             {event.id && <p><a href={`./events/${event.id}/`}>イベント参加情報</a></p>}
         </div>
     );
-    const pastEvents = data.events.filter((event => Date.now() - Date.parse(`${event.date}T23:59:59+0900`) >= 0));
-    pastEvents.reverse();
-    const pastEventElements = pastEvents.slice(0, 5).map(event => <li>
-        {event.id ? <a href={`./events/${event.id}/`}>{event.name}</a> : <span>{event.name}</span>}
-    </li>);
-    const isEventAll = pastEvents.length === pastEventElements.length;
     return <main role="main">
         <div id="center_logo">
             <picture>
@@ -68,9 +62,7 @@ export default (data: Data) => {
         </section>
 
         <section>
-            <h2>過去のサークル参加情報</h2>
-            {pastEventElements.length === 0 ? <p>過去の参加イベントはありません。</p> : pastEventElements}
-            {isEventAll || <a href="./events/">全て見る</a>}
+            <h2><a href="/events/">過去のサークル参加情報</a></h2>
         </section>
     </main>
 }

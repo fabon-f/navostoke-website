@@ -33,6 +33,13 @@ events:
     id: comitia139
     img: { type: png, src: comitia139_oshinagaki.png, width: 400, alt: "新刊 ロシア語警察24時 vol. 1 人名エトセトラ 500円" }
   -
+    name: コミックアカデミー20
+    date: "2022-05-14/2022-05-15"
+    url: https://comiaca.com/catalog20.html
+    status: 当選
+    space: C03
+    id: comiaca20
+  -
     name: コミックマーケット１００
     date: "2022-08-13"
     url: https://www.comiket.co.jp/info-a/C100/C100info.html

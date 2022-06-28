@@ -43,3 +43,7 @@ publisher = "${opts.publisher || "ナヴァストーケ"}",
 year = "${opts.publishDate.getFullYear()}",
 URL = "${opts.bookUrl}"
 }`.replace(/\n+/g, "\n");
+
+export function formatDate(date: string) {
+    return date.replaceAll("/", "〜").replaceAll("-", "/");
+}

@@ -1,4 +1,5 @@
 import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
+import { formatDate } from "./helpers.ts";
 
 export const ExternalLink = ({href, icon = true, children, ...props}: { href: string, icon?: boolean, children: React.ReactNode }) => {
     // https://iconmonstr.com/external-link-thin-svg/
@@ -12,3 +13,5 @@ export const WebpImage = ({ width, height, src, alt, className }: { width?: stri
         <source srcSet={`${src}.png`} width={width} height={height} type="image/png" />
         <img src={`${src}.png`} width={width} height={height} alt={alt} className={className} />
     </picture>;
+
+export const DateExpression = ({date}: { date: string }) => date.includes("/") ? <span>{DateExpression({date: date.split("/")[0]})}〜{DateExpression({date: date.split("/")[1]})}</span> : <time dateTime={date}>{`${formatDate(date)}`}</time>;
