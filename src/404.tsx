@@ -16,7 +16,7 @@ export default () => <main className="notfound">
     <div className="text">
         <h1>404 Not Found</h1>
         <h2>ページが存在しません。</h2>
-        <p>Страница не найдена. Кажется что-то не пошло не так.</p>
+        <p>Страница не найдена. Кажется что-то пошло не так.</p>
         <ul className="links">
             <li><a href="/">トップページへ</a></li>
             <li><a href="/works/">作品一覧</a></li>
