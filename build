@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+if [ -n "${CF_PAGES:-}" ]; then
+    # Cloudflare Pages
+    curl -fsSL https://deno.land/x/install/install.sh | sh
+    export PATH="$HOME/.deno/bin:$PATH"
+    deno run -A https://deno.land/x/lume/ci.ts
+else
+    lume
+fi
+
+# Workaround
+cp src/_headers _site/
