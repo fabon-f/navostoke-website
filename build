@@ -9,6 +9,3 @@ if [ -n "${CF_PAGES:-}" ]; then
 else
     lume
 fi
-
-# Workaround
-cp src/_headers _site/
