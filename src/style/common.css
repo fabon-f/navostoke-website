@@ -41,6 +41,11 @@ cite {
     font-style: italic;
 }
 
+blockquote p {
+    padding: 1.5em;
+    background-color: #F5F5F5;
+}
+
 #center_logo {
     text-align: center;
 }
@@ -198,6 +203,9 @@ table.book-info {
     }
     .book-info td, .book-info th {
         border-color: #777;
+    }
+    blockquote p {
+        background-color: #223;
     }
 }
 

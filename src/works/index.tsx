@@ -42,6 +42,12 @@ export default (data: Data, filters: Filters) => {
             <ul>
                 <li><ExternalLink href="https://www.pixiv.net/novel/show.php?id=16190901">「拝啓、海の向こうの空へ」全文</ExternalLink></li>
             </ul>
+            <li><ExternalLink href="https://utkiraracircle.github.io/posts/micare-2">Micare Vol.2</ExternalLink>寄稿(『初恋＊れ〜るとりっぷ』二次創作小説「初恋＊れ〜るみすてり」)</li>
+        </ul>
+
+        <h3>サークル「びストレーター」様</h3>
+        <ul>
+            <li><a href="/works/external/mazoku-analysis-c100/">まちカドまぞく評論合同〜まちカドのお楽しみ〜</a> 寄稿(評論「那由多誰何の倫理学入門」)</li>
         </ul>
     </main>;
 }
