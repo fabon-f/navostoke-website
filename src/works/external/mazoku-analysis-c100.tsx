@@ -1,5 +1,5 @@
 import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
-import { ExternalLink } from "../../../lib/components.tsx";
+import { ExternalLink, WebpImage } from "../../../lib/components.tsx";
 
 export const title = "まちカドまぞく評論合同「まちカドのお楽しみ」";
 export const description = "まちカドまぞく評論合同「まちカドのお楽しみ」の紹介ページ";
@@ -18,7 +18,7 @@ export default () => <main>
     <h3>サンプル</h3>
     <div className="book-samples">
         <ul>
-            <li><a href="/img/works/external/mazoku-c100.png" data-gallery="sample"><img src="/img/works/external/mazoku-c100.png" /></a></li>
+            <li><a href="/img/works/external/mazoku-c100.png" data-gallery="sample" data-gallery-webp><WebpImage src="/img/works/external/mazoku-c100" /></a></li>
             <li><a href="/img/works/external/mazoku-c100-toc.png" data-gallery="sample"><img src="/img/works/external/mazoku-c100-toc.png" /></a></li>
         </ul>
     </div>
