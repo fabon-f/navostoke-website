@@ -65,6 +65,10 @@ main section {
     margin: 40px 0;
 }
 
+li + li, ul + li, li + ul {
+    margin-top: 0.5em;
+}
+
 #center_logo {
     text-align: center;
 }
