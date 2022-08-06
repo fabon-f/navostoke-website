@@ -62,7 +62,6 @@ export default (data: Data, filters: Filters) => {
         </header>
         {children}
         <footer>
-            <p><ExternalLink href="https://www.fabon.info">ふぁぼんのホームページ</ExternalLink></p>
             <div id="footer">
                 <p>© 2021-{new Date().getFullYear()} ナヴァストーケ «на востоке»</p>
             </div>
