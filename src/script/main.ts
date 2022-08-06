@@ -15,7 +15,7 @@ for (const elem of document.querySelectorAll("a[data-gallery]")) {
         if (!elem.dataset.gallery) { continue; }
 
         if (webpSupport && typeof elem.dataset.galleryWebp === 'string') {
-            elem.href = elem.dataset.galleryWebp.endsWith(".webp") ? elem.dataset.galleryWebp : elem.href.replace(/\.[^\.]*/, ".webp")
+            elem.href = elem.dataset.galleryWebp.endsWith(".webp") ? elem.dataset.galleryWebp : elem.href.replace(/\.[^\.]*$/, ".webp")
         }
 
         if (!Array.isArray(table[elem.dataset.gallery])) {
