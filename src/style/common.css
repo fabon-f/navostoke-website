@@ -46,12 +46,27 @@ blockquote p {
     background-color: #F5F5F5;
 }
 
-#center_logo {
-    text-align: center;
+table {
+    border-collapse: collapse;
+}
+
+table td, table th {
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #BBB;
+}
+
+table th {
+    font-weight: bold;
 }
 
 main section {
     margin: 40px 0;
+}
+
+#center_logo {
+    text-align: center;
 }
 
 #center_logo img {
@@ -124,17 +139,6 @@ main section {
     display: flex;
 }
 
-table.errata {
-    border-collapse: collapse;
-}
-
-.errata td, .errata th {
-    padding: 0.5em 1em;
-    border-style: solid;
-    border-width: 0 0 1px;
-    border-color: #BBB;
-}
-
 .errata th {
     border-width: 0 0 2px;
 }
@@ -150,21 +154,6 @@ table.errata {
     margin: 5px;
     min-width: 200px;
     border: 1px solid #000;
-}
-
-table.book-info {
-    border-collapse: collapse;
-}
-
-.book-info td, .book-info th {
-    padding: 0.5em 1em;
-    border-style: solid;
-    border-width: 0 0 1px;
-    border-color: #BBB;
-}
-
-.book-info th {
-    font-weight: bold;
 }
 
 #citation-exporter {
@@ -188,6 +177,9 @@ table.book-info {
     a {
         color: #91acd1;
     }
+    table td, table th {
+        border-color: #777;
+    }
     .header_nav {
         background-color: #84a0c6;
     }
@@ -195,14 +187,8 @@ table.book-info {
         background-color: #89b8c2;
         color: #161821;
     }
-    .errata td, .errata th {
-        border-color: #777;
-    }
     .book-samples li {
         border: 1px solid #FFF;
-    }
-    .book-info td, .book-info th {
-        border-color: #777;
     }
     blockquote p {
         background-color: #223;
