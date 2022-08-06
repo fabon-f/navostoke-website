@@ -5,31 +5,39 @@ export const title = "まちカドまぞく評論合同「まちカドのお楽�
 export const description = "まちカドまぞく評論合同「まちカドのお楽しみ」の紹介ページ";
 
 export default () => <main>
-    <h1>まちカドまぞく評論合同「まちカドのお楽しみ」</h1>
-    <p><strong>サークル「<ExternalLink href="https://twitter.com/be_straighter">びストレーター</ExternalLink>」さん</strong></p>
-    <p><strong>※この合同誌は当サークル発行のものではありません。</strong>サークル主(ふぁぼん)が寄稿した本を勝手に紹介・宣伝しています。</p>
+    <section>
+        <h1>まちカドまぞく評論合同「まちカドのお楽しみ」</h1>
+        <p><strong>サークル「<ExternalLink href="https://twitter.com/be_straighter">びストレーター</ExternalLink>」さん</strong></p>
+        <p><strong>※この合同誌は当サークル発行のものではありません。</strong>サークル主(ふぁぼん)が寄稿した本を勝手に紹介・宣伝しています。</p>
+    </section>
 
-    <h2>内容紹介</h2>
-    <blockquote cite="https://www.melonbooks.co.jp/detail/detail.php?product_id=1564885">
-        <p>アニメ2期の『まちカドまぞく2丁目』を記念した<br/>『まちカドまぞく』の楽しいところ、奥深いところをひとまとめにした合同誌です。<br/><br/>圧倒的な文字量と、現実との垣根を越えた幅広い解説・評論をお届けします。<br/><br/>記事リスト<br/>「『まちカドまぞく』時系列カレンダー」<br/>「「まちカド厨房」なグルメ作ってみた」<br/>「きららアニメの比較から考える『まちカドまぞく』ヒットの理由」<br/>「アニメ版『まちカドまぞく』はなぜ面白いのか」<br/>「多魔地域における聖地分布について」<br/>「那由多誰何の倫理学入門」<br/>「『まちカドまぞく』タイトル論」<br/>「まちカドまぞくミニクイズ企画「根源」」<br/>「まちカドまぞクイズ～最近ビタミンCとクエン酸が足りないあなたに贈る問題集～」</p>
-        <cite><ExternalLink href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1564885">メロンブックス</ExternalLink></cite>
-    </blockquote>
+    <section>
+        <h2>内容紹介</h2>
+        <blockquote cite="https://www.melonbooks.co.jp/detail/detail.php?product_id=1564885">
+            <p>アニメ2期の『まちカドまぞく2丁目』を記念した<br/>『まちカドまぞく』の楽しいところ、奥深いところをひとまとめにした合同誌です。<br/><br/>圧倒的な文字量と、現実との垣根を越えた幅広い解説・評論をお届けします。<br/><br/>記事リスト<br/>「『まちカドまぞく』時系列カレンダー」<br/>「「まちカド厨房」なグルメ作ってみた」<br/>「きららアニメの比較から考える『まちカドまぞく』ヒットの理由」<br/>「アニメ版『まちカドまぞく』はなぜ面白いのか」<br/>「多魔地域における聖地分布について」<br/>「那由多誰何の倫理学入門」<br/>「『まちカドまぞく』タイトル論」<br/>「まちカドまぞくミニクイズ企画「根源」」<br/>「まちカドまぞクイズ～最近ビタミンCとクエン酸が足りないあなたに贈る問題集～」</p>
+            <cite><ExternalLink href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1564885">メロンブックス</ExternalLink></cite>
+        </blockquote>
+    </section>
 
-    <h3>サンプル</h3>
-    <div className="book-samples">
+    <section>
+        <h3>サンプル</h3>
+        <div className="book-samples">
+            <ul>
+                <li><a href="/img/works/external/mazoku-c100.png" data-gallery="sample" data-gallery-webp><WebpImage src="/img/works/external/mazoku-c100" /></a></li>
+                <li><a href="/img/works/external/mazoku-c100-toc.png" data-gallery="sample"><img src="/img/works/external/mazoku-c100-toc.png" /></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>通販</h2>
         <ul>
-            <li><a href="/img/works/external/mazoku-c100.png" data-gallery="sample" data-gallery-webp><WebpImage src="/img/works/external/mazoku-c100" /></a></li>
-            <li><a href="/img/works/external/mazoku-c100-toc.png" data-gallery="sample"><img src="/img/works/external/mazoku-c100-toc.png" /></a></li>
+            <li><ExternalLink href="https://be-straighter.booth.pm/items/4014481">BOOTH</ExternalLink></li>
+            <li><ExternalLink href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1564885">メロンブックス</ExternalLink></li>
         </ul>
-    </div>
+    </section>
 
-    <h2>通販</h2>
-    <ul>
-        <li><ExternalLink href="https://be-straighter.booth.pm/items/4014481">BOOTH</ExternalLink></li>
-        <li><ExternalLink href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1564885">メロンブックス</ExternalLink></li>
-    </ul>
-
-    <div>
+    <section>
         <blockquote className="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">「まちカドまぞクイズ～最近ビタミンCとクエン酸が足りないあなたに贈る問題集～」<br/>ひろきち （<a href="https://twitter.com/bay_duck1725">@bay_duck1725</a>）さんの作品です。<br/>まちカドまぞくなベタ問題から、最新情報や多答問題まで盛りだくさんな問題集となっております。<br/>私も試しに解いてみたところ150/179でした。<br/><a href="https://twitter.com/hashtag/%E3%81%BE%E3%81%A1%E3%82%AB%E3%83%89%E8%A9%95%E8%AB%96%E5%90%88%E5%90%8C?src=hash&amp;ref_src=twsrc%5Etfw">#まちカド評論合同</a><br/><a href="https://twitter.com/hashtag/C100?src=hash&amp;ref_src=twsrc%5Etfw">#C100</a> <a href="https://t.co/bLpoV7nllg">pic.twitter.com/bLpoV7nllg</a></p>&mdash; ななこん@C100土曜東Y31b (@be_straighter) <a href="https://twitter.com/be_straighter/status/1555506671220400129">August 5, 2022</a></blockquote>
 
         <blockquote className="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">「まちカドまぞくミニクイズ企画「根源」」<br/>ななこん（<a href="https://twitter.com/be_straighter">@be_straighter</a>）作の原稿その１です。<br/>８人くらいでやると丁度良い感じの企画書つきの問題集です。<br/>ペーパー力、アンテナの高さ、押しの度胸の全てが試されるまったり＆ストイック系の問題群です。<br/><a href="https://twitter.com/hashtag/%E3%81%BE%E3%81%A1%E3%82%AB%E3%83%89%E8%A9%95%E8%AB%96%E5%90%88%E5%90%8C?src=hash&amp;ref_src=twsrc%5Etfw">#まちカド評論合同</a><br/><a href="https://twitter.com/hashtag/C100?src=hash&amp;ref_src=twsrc%5Etfw">#C100</a> <a href="https://t.co/14J9A9HQ8O">pic.twitter.com/14J9A9HQ8O</a></p>&mdash; ななこん@C100土曜東Y31b (@be_straighter) <a href="https://twitter.com/be_straighter/status/1555506926665863168">August 5, 2022</a></blockquote>
@@ -49,7 +57,7 @@ export default () => <main>
         <blockquote className="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">「『まちカドまぞく』時系列 カレンダー」<br/>とのすく温泉（<a href="https://twitter.com/tunusuku390">@tunusuku390</a>）さんの作品です。<br/>「シャミ子が覚醒した日」、「ミカンの引越日」や「闇堕ち記念日」って実際は何年の何月何日なのでしょう？<br/>そんな疑問も時系列順で解説されている、設定解釈にマストな内容です。<br/><a href="https://twitter.com/hashtag/%E3%81%BE%E3%81%A1%E3%82%AB%E3%83%89%E8%A9%95%E8%AB%96%E5%90%88%E5%90%8C?src=hash&amp;ref_src=twsrc%5Etfw">#まちカド評論合同</a><br/><a href="https://twitter.com/hashtag/C100?src=hash&amp;ref_src=twsrc%5Etfw">#C100</a> <a href="https://t.co/aVVjpfhCoo">pic.twitter.com/aVVjpfhCoo</a></p>&mdash; ななこん@C100土曜東Y31b (@be_straighter) <a href="https://twitter.com/be_straighter/status/1555508686285459456">August 5, 2022</a></blockquote>
 
         <blockquote className="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">【夏コミ新刊】<br/>まちカドまぞく評論合同「まちカドのお楽しみ」<br/>1000円/100ページ<br/>表紙は有山えいき（<a href="https://twitter.com/arymeik">@arymeik</a>）さんのスタイリッシュ&amp;キュートなイラストです。<br/>コミケの土曜日東Y31bでお待ちしてます！<br/>※通販もあります。<a href="https://t.co/DvheHxlwJI">https://t.co/DvheHxlwJI</a><a href="https://t.co/Fp4LiYVahB">https://t.co/Fp4LiYVahB</a><br/><a href="https://twitter.com/hashtag/%E3%81%BE%E3%81%A1%E3%82%AB%E3%83%89%E8%A9%95%E8%AB%96%E5%90%88%E5%90%8C?src=hash&amp;ref_src=twsrc%5Etfw">#まちカド評論合同</a><br/><a href="https://twitter.com/hashtag/C100?src=hash&amp;ref_src=twsrc%5Etfw">#C100</a> <a href="https://t.co/hM2CV30LsW">pic.twitter.com/hM2CV30LsW</a></p>&mdash; ななこん@C100土曜東Y31b (@be_straighter) <a href="https://twitter.com/be_straighter/status/1555509013634289664">August 5, 2022</a></blockquote>
-    </div>
+    </section>
 
     <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 </main>;
