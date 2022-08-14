@@ -24,9 +24,12 @@ export default (data: Data) => {
         <p>{eventData.url && <ExternalLink href={eventData.url}>イベント公式サイト</ExternalLink>}</p>
         {imageElement(eventData.img)}
 
+        <h2>告知記事</h2>
+        <ExternalLink href="https://fabon.fanbox.cc/posts/4253130">【全体公開】夏コミの告知 (最終版)</ExternalLink>
+
         <h2>頒布物</h2>
         <ul>
-            <li>新刊 (予定)</li>
+            <li>新刊(コピー本)「ロシア語警察24時 vol.2パイロット版 『月とライカと吸血姫』ロシア語解説」</li>
             <li><a href="/works/russian-police-1/">ロシア語警察24時 vol. 1 人名エトセトラ</a> (既刊)</li>
         </ul>
     </main>;
