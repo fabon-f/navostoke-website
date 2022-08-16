@@ -26,7 +26,7 @@ function scriptTags(script?: string | string[]) {
 
 export default (data: Data, filters: Filters) => {
     const siteName = "ナヴァストーケ";
-    const { children, title, description, url, stylesheet, script, ogImage, twitterCardType } = data;
+    const { children, title, description, url, stylesheet, globalScript, pageScript, ogImage, twitterCardType } = data;
     const fullTitle = title ? `${title} | ${siteName}` : siteName;
     const defaultDescription = "サークル「ナヴァストーケ」の公式サイト";
     return <html lang="ja">
@@ -66,7 +66,8 @@ export default (data: Data, filters: Filters) => {
                 <p>© 2021-{new Date().getFullYear()} ナヴァストーケ «на востоке»</p>
             </div>
         </footer>
-        {scriptTags(script)}
+        {scriptTags(globalScript)}
+        {scriptTags(pageScript)}
     </body>
 </html>;
 }

@@ -3,7 +3,7 @@ layout: layouts/layout.tsx
 stylesheet:
   - common
   - https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous-basic.min.css
-script:
+globalScript:
   - https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js
   - main
 ogImage: /img/logo.png
