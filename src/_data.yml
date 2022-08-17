@@ -47,3 +47,13 @@ events:
     space: "土曜日 東地区 \"ペ\" ブロック 32b"
     id: c100
     img: { type: png, src: c100_circlecut.png, width: 400, alt: "新刊: ロシア語・旧ソ連評論本 既刊: 「ロシア語警察24時」シリーズ" }
+
+downloads:
+  -
+    title: ロシア語警察24時 vol. 1 人名エトセトラ (電子版)
+    id: russian-police-1
+    img: { type: webp, src: /img/works/russian-police-1-cover, width: 200 }
+    ogImage: /img/works/russian-police-1-cover.png
+    archive: /archives/ruspolice1_e.zip
+    encrypted: true
+    extractOnWeb: true

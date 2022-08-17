@@ -13,7 +13,7 @@ site.use(jsx());
 site.use(date());
 site.use(esbuild({
     options: {
-        entryPoints: ["script/main.ts"],
+        entryPoints: ["script/main.ts", "script/download.ts"],
         bundle: true,
         format: "iife",
         minify: true,

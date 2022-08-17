@@ -4,6 +4,7 @@ import type { Helper, Data as LumeData } from "lume/core.ts";
 export type Data = {
     events: Event[];
     series: {name:string,description?:string, books?:Book[]}[]
+    downloads: DownloadItem[]
 
     title?: string;
     description?: string;
@@ -44,4 +45,14 @@ type Book = {
     published?: boolean;
     publishDate: Date;
     img?: {type: string; src: string};
+}
+
+type DownloadItem = {
+    title: string;
+    id: string;
+    img?: { type: string; src: string };
+    ogImage?: string;
+    archive: string;
+    encrypted?: boolean;
+    extractOnWeb?: boolean;
 }
