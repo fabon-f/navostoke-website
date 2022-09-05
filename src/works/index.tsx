@@ -1,5 +1,6 @@
 import { ExternalLink, WebpImage } from "../../lib/components.tsx";
-import { Data, Filters } from "../types.ts";
+import { PageHelpers } from "lume/core.ts";
+import { Data } from "../types.ts";
 
 export const title = "作品一覧";
 export const description = "作品の一覧ページ";
@@ -13,7 +14,7 @@ function imageElement(opt: {type: string; src: string}) {
     }
 }
 
-export default (data: Data, filters: Filters) => {
+export default (data: Data, filters: PageHelpers) => {
     const books = data.series.filter(series => Array.isArray(series.books)).map(series =>
         <div>
             <h2>{series.name}</h2>

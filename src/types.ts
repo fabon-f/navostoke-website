@@ -1,5 +1,4 @@
 import type { ComponentChildren } from "preact";
-import type { Helper, Data as LumeData } from "lume/core.ts";
 
 export type Data = {
     events: Event[];
@@ -17,17 +16,6 @@ export type Data = {
     url: string;
     children?: ComponentChildren;
 }
-
-export type BuiltinFilters = {
-    md: (content: string, inline?: boolean) => string;
-    njk: (content: string, data?: LumeData) => Promise<string>;
-    url: (path?: string, absolute?: boolean) => string;
-    htmlUrl: (html?: string, absolute?: boolean) => string;
-
-    date: (date: Date | string, format?: string, locale?: string) => string;
-};
-
-export type Filters = Record<string, Helper> & BuiltinFilters;
 
 type Event = {
     name: string;

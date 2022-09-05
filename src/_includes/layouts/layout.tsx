@@ -1,5 +1,6 @@
 import { ExternalLink } from "../../../lib/components.tsx"
-import { Data, Filters } from "../../types.ts"
+import { PageHelpers } from "lume/core.ts";
+import { Data } from "../../types.ts"
 
 function cssLinks(stylesheet?: string | string[]) {
     const cssUrl = (u: string) => u.startsWith("https://") ? u : `/style/${u}.css`
@@ -23,7 +24,7 @@ function scriptTags(script?: string | string[]) {
     }
 }
 
-export default (data: Data, filters: Filters) => {
+export default (data: Data, filters: PageHelpers) => {
     const siteName = "ナヴァストーケ";
     const { children, title, description, url, stylesheet, globalScript, pageScript, ogImage, twitterCardType } = data;
     const fullTitle = title ? `${title} | ${siteName}` : siteName;

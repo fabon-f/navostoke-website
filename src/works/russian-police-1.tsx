@@ -1,13 +1,14 @@
 import { ExternalLink, WebpImage } from "../../lib/components.tsx";
 import { getBookData, buildBibtexCitation } from "../../lib/helpers.ts";
-import { Data, Filters } from "../types.ts";
+import { PageHelpers } from "lume/core.ts";
+import { Data } from "../types.ts";
 
 export const title = "ロシア語警察24時 vol. 1 人名エトセトラ";
 export const description = "「ロシア語警察24時 vol. 1 人名エトセトラ」の紹介ページ";
 export const ogImage = "/img/works/russian-police-1-cover.png"
 
 
-export default (data: Data, filters: Filters) => {
+export default (data: Data, filters: PageHelpers) => {
     const bookData = getBookData(data);
     const bibtexInfo = buildBibtexCitation({
         bookId: bookData.id,
