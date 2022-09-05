@@ -1,4 +1,3 @@
-import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
 export const url = "/404.html";
 
 export const title = "ページが存在しません";

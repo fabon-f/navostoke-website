@@ -1,6 +1,6 @@
 import lume from "lume/mod.ts";
 import { Page } from "lume/core.ts"
-import jsx from "lume/plugins/jsx.ts";
+import preact from "lume/plugins/jsx_preact.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import parcelCss from "lume/plugins/parcel_css.ts";
@@ -9,7 +9,7 @@ const site = lume({
     src: "src",
     location: new URL("https://navostoke.fabon.info"),
 });
-site.use(jsx());
+site.use(preact());
 site.use(date());
 site.use(esbuild({
     options: {

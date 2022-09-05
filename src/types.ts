@@ -1,4 +1,4 @@
-import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
+import type { ComponentChildren } from "preact";
 import type { Helper, Data as LumeData } from "lume/core.ts";
 
 export type Data = {
@@ -15,7 +15,7 @@ export type Data = {
     twitterCardType?: string;
 
     url: string;
-    children?: React.ReactNode;
+    children?: ComponentChildren;
 }
 
 export type BuiltinFilters = {

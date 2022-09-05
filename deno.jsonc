@@ -1,4 +1,9 @@
 {
+    "importMap": "./import_map.json",
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "preact"
+    },
     "lint": {
         "files": {
             "exclude": ["_site"]

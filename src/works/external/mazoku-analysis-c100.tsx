@@ -1,4 +1,3 @@
-import React from "https://deno.land/x/react_deno@17.0.2/react.ts";
 import { ExternalLink, WebpImage } from "../../../lib/components.tsx";
 
 export const title = "まちカドまぞく評論合同「まちカドのお楽しみ」";
