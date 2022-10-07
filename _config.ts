@@ -3,7 +3,7 @@ import { Page } from "lume/core.ts"
 import preact from "lume/plugins/jsx_preact.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
-import parcelCss from "lume/plugins/parcel_css.ts";
+import lightningCss from "lume/plugins/lightningcss.ts";
 
 const site = lume({
     src: "src",
@@ -23,7 +23,7 @@ site.use(esbuild({
         treeShaking: true
     }
 }));
-site.use(parcelCss({
+site.use(lightningCss({
     options: {
         analyzeDependencies: true,
         minify: true
