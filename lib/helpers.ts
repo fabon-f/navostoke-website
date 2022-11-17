@@ -23,6 +23,10 @@ export function getBookData(data: Data) {
     throw new Error("the book unavailable");
 }
 
+export function getFutureEvents(data: Data) {
+    return data.events.filter(event => Date.now() - Date.parse(`${event.date.includes("/") ? event.date.split("/")[1] : event.date}T23:59:59+0900`) < 0);
+}
+
 type CitationInfo = {
     bookId: string,
     author?: string,

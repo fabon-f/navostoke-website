@@ -1,4 +1,5 @@
 import { ExternalLink, WebpImage, DateExpression } from "../../lib/components.tsx";
+import { getFutureEvents } from "../../lib/helpers.ts"
 import { Data } from "../types.ts";
 
 export const title = "イベント参加情報";
@@ -14,7 +15,7 @@ function imageElement(opt: {type: string; src: string}) {
 }
 
 export default (data: Data) => {
-    const futureEvents = data.events.filter(event => Date.now() - Date.parse(`${event.date.includes("/") ? event.date.split("/")[1] : event.date}T23:59:59+0900`) < 0).map(event =>
+    const futureEvents = getFutureEvents(data).map(event =>
         <div>
             <h3>{event.name}{` (${event.status})` || ""}</h3>
             {event.url && <ExternalLink href={event.url}>イベント公式サイト</ExternalLink>}
