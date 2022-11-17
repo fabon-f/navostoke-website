@@ -47,6 +47,13 @@ events:
     space: "土曜日 東地区 \"ペ\" ブロック 32b"
     id: c100
     img: { type: png, src: c100_circlecut.png, width: 400, alt: "新刊: ロシア語・旧ソ連評論本 既刊: 「ロシア語警察24時」シリーズ" }
+  -
+    name: コミックアカデミー21
+    date: "2022-11-18/2022-11-20"
+    url: https://comiaca.com/catalog21.html
+    status: 当選
+    space: C02
+    id: comiaca21
 
 downloads:
   -
