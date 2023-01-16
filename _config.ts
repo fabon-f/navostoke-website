@@ -1,5 +1,4 @@
 import lume from "lume/mod.ts";
-import { Page } from "lume/core.ts"
 import preact from "lume/plugins/jsx_preact.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
@@ -33,13 +32,5 @@ site.use(lightningCss({
 for (const path of ["_headers", "img", "favicon.ico", "archives"]) {
     site.copy(path)
 }
-
-function addDoctype(page: Page) {
-    if (typeof page.content === "string" && !page.content.trim().startsWith("<!DOCTYPE")) {
-        page.content = `<!DOCTYPE html>${page.content}`;
-    }
-}
-
-site.process([".html"], addDoctype);
 
 export default site;
