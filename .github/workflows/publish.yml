@@ -9,12 +9,17 @@ jobs:
     name: Publish to Cloudflare Pages
     steps:
       - uses: actions/checkout@v3
-      - uses: denoland/setup-deno@v1
+      - uses: pnpm/action-setup@v2
         with:
-          deno-version: vx.x.x
-
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
       - name: Build
-        run: deno task build
+        run: pnpm run build
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -22,5 +27,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 3f28d3a5c9a4bdc4a451bb2ce2ba89be
           projectName: fabon
-          directory: _site
+          directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
