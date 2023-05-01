@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Cyrillic;
+    src: local("Helvetica Neue"), local("Arial");
+    font-weight: normal;
+    /* only cyrillic */
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Cyrillic;
+    src: local("Helvetica Neue Bold"), local("Arial Bold");
+    font-weight: bold;
+    /* only cyrillic */
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116, U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cyrillic, Meiryo, sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+h1 {
+    margin-top: 1.5em;
+}
+h2 {
+    margin-top: 2em;
+}
+
+cite {
+    font-style: italic;
+}
+
+blockquote p {
+    padding: 1.5em;
+    background-color: #F5F5F5;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td, table th {
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #BBB;
+}
+
+table th {
+    font-weight: bold;
+}
+
+main section {
+    margin: 40px 0;
+}
+
+li + li, ul + li, li + ul {
+    margin-top: 0.5em;
+}
+
+#center_logo {
+    text-align: center;
+}
+
+#center_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#footer {
+    background-color: #CCC;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+#footer p {
+    margin: 0;
+    line-height: 2.5;
+    font-size: 80%;
+}
+
+.header_nav {
+    background-color: #c0cdee;
+}
+
+.header_nav_top {
+    padding: 4px;
+}
+
+.header_nav_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header_nav_inner li {
+    list-style: none;
+}
+
+.header_nav_links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header_nav_links li {
+    margin: 0 8px;
+}
+
+.header_nav_links a {
+    color: #333;
+}
+
+.header_nav_links a:hover {
+    color: #000;
+}
+
+
+
+.background-dark {
+    background-color: #161821;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.logo_gallery {
+    display: flex;
+}
+
+.errata th {
+    border-width: 0 0 2px;
+}
+
+.book-samples ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-samples li {
+    list-style: none;
+    width: 22%;
+    margin: 5px;
+    min-width: 200px;
+    border: 1px solid #000;
+}
+
+#citation-exporter {
+    margin-top: 3em;
+}
+#citation-exporter textarea {
+    height: 7em;
+    width: 50em;
+    max-width: 90%;
+}
+
+[data-gallery] {
+    cursor: zoom-in;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #161821;
+        color: #d2d4de;
+    }
+    a {
+        color: #91acd1;
+    }
+    table td, table th {
+        border-color: #777;
+    }
+    .header_nav {
+        background-color: #84a0c6;
+    }
+    #footer {
+        background-color: #89b8c2;
+        color: #161821;
+    }
+    .book-samples li {
+        border: 1px solid #FFF;
+    }
+    blockquote p {
+        background-color: #223;
+    }
+}
+
+.lum-lightbox-image-wrapper {
+    -webkit-overflow-scrolling: touch !important;
+    display: flex !important;
+    overflow: auto !important;
+}
+.lum-lightbox-caption {
+    bottom: 0 !important;
+    position: absolute !important;
+    width: 100%  !important;
+}
+.lum-lightbox-position-helper {
+    margin: auto  !important;
+}
+.lum-lightbox-inner img {
+    max-height: none !important;
+    max-width: 200vw !important;
+}
+
+
+
+
+.notfound {
+    text-align: center;
+}
+.notfound h1 {
+    font-size: 2.5em;
+}
+@media screen and (min-width: 721px) {
+    .notfound {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .notfound h2 {
+        margin-top: 0.2em;
+    }
+    .notfound .illust {
+        margin: 1em;
+    }
+    .notfound .text {
+        flex: 1;
+    }
+    .notfound .links {
+        padding: 0;
+        margin-top: 2em;
+    }
+    .notfound .links li {
+        list-style: none;
+        margin-top: 0.3em;
+    }
+}

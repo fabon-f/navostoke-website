@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="ページが存在しません">
+  <main class="notfound">
+    <figure class="illust">
+      <picture>
+        <source srcset="/img/net.webp" width={772} height={435} type="image/webp" />
+        <source srcset="/img/net.jpg" width="250" type="image/jpg" />
+        <img src="/img/net.jpg" alt="НЕТ!" width="250" />
+      </picture>
+      <figcaption>Говорков, Виктор Иванович<br /><cite>«Нет!»</cite> (1954)</figcaption>
+    </figure>
+
+    <div class="text">
+      <h1>404 Not Found</h1>
+      <h2>ページが存在しません。</h2>
+      <p>Страница не найдена. Кажется что-то пошло не так.</p>
+      <ul class="links">
+        <li><a href="/">トップページへ</a></li>
+        <li><a href="/works/">作品一覧</a></li>
+      </ul>
+    </div>
+  </main>
+</Layout>
