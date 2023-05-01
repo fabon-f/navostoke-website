@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import UnzipDownloader from '../../components/UnzipDownloader';
 import { downloads } from '../../data';
 import type { DownloadItem } from '../../data';
 
@@ -35,18 +36,12 @@ const title = `${item.title} ダウンロード`;
     { item.img && <img {...item.img} class="img" /> }
 
     {
-      item.extractOnWeb && <div id="unzip" data-archive-url={item.archive}>
-        <label>パスワード: <input type="text" class="unzip-password" /></label>
-        <button type="button" class="unzip-dl-button">ダウンロード</button>
-        <p class="unzip-progress-message"></p>
-        <p><strong class="unzip-error-message"></strong></p>
-      </div>
+      item.extractOnWeb && <UnzipDownloader item={item} client:load />
     }
     <div>
       <a href={item.archive}>{dlMessage(item)}</a>
     </div>
   </main>
-  <script src="../../script/download.ts"></script>
 </Layout>
 
 <style scoped>

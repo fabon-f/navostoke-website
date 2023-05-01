@@ -11,10 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^2.1.0",
     "@astrojs/sitemap": "^1.2.2",
     "@zip.js/zip.js": "^2.7.6",
     "astro": "^2.3.2",
-    "luminous-lightbox": "^2.4.0"
+    "luminous-lightbox": "^2.4.0",
+    "preact": "^10.13.2"
   },
   "devDependencies": {
     "astro-compress": "^1.1.42"
