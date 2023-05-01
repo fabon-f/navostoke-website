@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { downloads } from '../../data';
+import type { DownloadItem } from '../../data';
+
+export type Props = {
+  item: DownloadItem
+}
+
+export function getStaticPaths() {
+  return downloads.map(item => (
+    {
+      params: { id: item.id },
+      props: { item }
+    }
+  ))
+}
+
+function dlMessage(item: DownloadItem) {
+    if (item.archive.endsWith(".zip") && item.encrypted) {
+        return "元データ(暗号化zip)を直接ダウンロードする";
+    }
+    if (item.archive.endsWith(".zip")) {
+        return "元データ(zip)を直接ダウンロードする";
+    }
+    return "元データを直接ダウンロードする";
+}
+
+const item = Astro.props.item;
+const title = `${item.title} ダウンロード`;
+---
+<Layout title={title} ogImage={item.ogImage}>
+  <main>
+    <h1>{item.title}<br/>ダウンロードページ</h1>
+    { item.img && <img {...item.img} class="img" /> }
+
+    {
+      item.extractOnWeb && <div id="unzip" data-archive-url={item.archive}>
+        <label>パスワード: <input type="text" class="unzip-password" /></label>
+        <button type="button" class="unzip-dl-button">ダウンロード</button>
+        <p class="unzip-progress-message"></p>
+        <p><strong class="unzip-error-message"></strong></p>
+      </div>
+    }
+    <div>
+      <a href={item.archive}>{dlMessage(item)}</a>
+    </div>
+  </main>
+  <script src="../../script/download.ts"></script>
+</Layout>
+
+<style scoped>
+  .img {
+    width: 200px;
+    height: auto;
+  }
+</style>

@@ -85,3 +85,25 @@ export const events: Event[] = [
     id: 'comiaca21'
   }
 ]
+
+export type DownloadItem = {
+  title: string;
+  id: string;
+  img?: ImgProps;
+  ogImage?: string;
+  archive: string;
+  encrypted?: boolean;
+  extractOnWeb?: boolean;
+}
+
+export const downloads: DownloadItem[] = [
+  {
+    id: 'russian-police-1',
+    title: 'ロシア語警察24時 vol. 1 人名エトセトラ (電子版)',
+    ogImage: '/img/works/russian-police-1-cover.png',
+    archive: '/archives/ruspolice1_e.zip',
+    encrypted: true,
+    extractOnWeb: true,
+    img: { src: '/img/works/russian-police-1-cover.png', width: '765', height: '1087' }
+  }
+]

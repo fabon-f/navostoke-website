@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@zip.js/zip.js':
+    specifier: ^2.7.6
+    version: 2.7.6
   astro:
     specifier: ^2.3.2
     version: 2.3.2
@@ -705,6 +708,11 @@ packages:
 
   /@vscode/l10n@0.0.13:
     resolution: {integrity: sha512-A3uY356uOU9nGa+TQIT/i3ziWUgJjVMUrGGXSrtRiTwklyCFjGVWIOHoEIHbJpiyhDkJd9kvIWUOfXK1IkK8XQ==}
+    dev: false
+
+  /@zip.js/zip.js@2.7.6:
+    resolution: {integrity: sha512-j9gaYG84Qd3tI3X7BiOpL5bckbbAetpxtpilKnSyW5rMTnrXwH6GtXkL8rEBxnPk100exbfxNlORwFagX7fMfg==}
+    engines: {deno: '>=1.0.0', node: '>=16.5.0'}
     dev: false
 
   /acorn@8.8.2:

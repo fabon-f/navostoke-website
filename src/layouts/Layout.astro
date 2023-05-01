@@ -3,10 +3,10 @@ import '../common.css';
 import ExternalLink from '../components/ExternalLink.astro';
 
 export type Props = {
-	title?: string;
-  description?: string;
-  twitterCardType?: string;
-  ogImage?: string;
+	title?: string | undefined;
+  description?: string | undefined;
+  twitterCardType?: string | undefined;
+  ogImage?: string | undefined;
 };
 
 const { title } = Astro.props;
