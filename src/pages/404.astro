@@ -6,8 +6,8 @@ import Layout from '../layouts/Layout.astro';
     <figure class="illust">
       <picture>
         <source srcset="/img/net.webp" width={772} height={435} type="image/webp" />
-        <source srcset="/img/net.jpg" width="250" type="image/jpg" />
-        <img src="/img/net.jpg" alt="НЕТ!" width="250" />
+        <source srcset="/img/net.jpg" width="250" height="362" type="image/jpg" />
+        <img src="/img/net.jpg" alt="НЕТ!" width="250" height="362" class="img" />
       </picture>
       <figcaption>Говорков, Виктор Иванович<br /><cite>«Нет!»</cite> (1954)</figcaption>
     </figure>
@@ -16,10 +16,39 @@ import Layout from '../layouts/Layout.astro';
       <h1>404 Not Found</h1>
       <h2>ページが存在しません。</h2>
       <p>Страница не найдена. Кажется что-то пошло не так.</p>
-      <ul class="links">
-        <li><a href="/">トップページへ</a></li>
-        <li><a href="/works/">作品一覧</a></li>
-      </ul>
+      <div class="link"><a href="/">トップページへ</a></div>
+      <div class="link"><a href="/works/">作品一覧</a></div>
     </div>
   </main>
 </Layout>
+
+<style scoped>
+  main {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .img {
+    width: 250px;
+    height: auto;
+  }
+  .link {
+    margin-top: 0.5em;
+  }
+  @media screen and (min-width: 721px) {
+    main {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    h2 {
+      margin-top: 0.2em;
+    }
+    .illust {
+      margin: 1em;
+    }
+    .text {
+      flex: 1;
+    }
+  }
+</style>
