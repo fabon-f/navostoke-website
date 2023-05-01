@@ -4,6 +4,9 @@ dependencies:
   astro:
     specifier: ^2.3.2
     version: 2.3.2
+  luminous-lightbox:
+    specifier: ^2.4.0
+    version: 2.4.0
 
 packages:
 
@@ -1627,6 +1630,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: false
+
+  /luminous-lightbox@2.4.0:
+    resolution: {integrity: sha512-qu1IE2/+sTyAzUgEGffHPnBNenJ1CDDieSDy6yLgmJUsMVoTLCbTeDJuQvje4hpl+M3xZvq87TIP8hu3BsgaEQ==}
     dev: false
 
   /magic-string@0.27.0:

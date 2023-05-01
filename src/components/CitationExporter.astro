@@ -1,0 +1,38 @@
+---
+export type Props = {
+  bookId: string,
+  author?: string,
+  title: string,
+  publisher?: string,
+  bookUrl: string | URL,
+  publishDate: string | Date,
+  series?: string,
+  number?: string
+};
+
+const props = Astro.props;
+const date = (typeof props.publishDate === 'string' ? new Date(props.publishDate) : props.publishDate)
+
+const bibtexCitation = `@book { navostoke-${props.bookId},
+author = "${props.author || "ふぁぼん"}",
+title = "${props.title}",
+${props.series ? `series = "${props.series}",` : ""}
+${props.number ? `number = "${props.number}",` : ""}
+publisher = "${props.publisher || "ナヴァストーケ"}",
+year = "${date.getFullYear()}",
+URL = "${props.bookUrl}"
+}`.replace(/\n+/g, "\n");
+---
+
+<details id="citation-exporter">
+  <summary>書誌情報のエクスポート (BibTeX)</summary>
+  <textarea readonly>{bibtexCitation}</textarea>
+</details>
+
+<style scoped>
+  textarea {
+    height: 7em;
+    width: 50em;
+    max-width: 90%;
+  }
+</style>

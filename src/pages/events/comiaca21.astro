@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import EventInfo from '../../components/EventInfo.astro';
+import ExternalLink from '../../components/ExternalLink.astro';
+
+import { events } from '../../data';
+import { getEventData } from '../../lib/event';
+const event = getEventData(Astro.url.pathname.split('/')[2]!, events);
+---
+<Layout title="コミックアカデミー21" description="コミックアカデミー21のイベント参加情報">
+  <main>
+    <EventInfo event={event}></EventInfo>
+
+    <h2>頒布物</h2>
+    <ul>
+      <li>「ロシア語警察24時 vol.2パイロット版 『月とライカと吸血姫』ロシア語解説」(既刊ペーパー)</li>
+      <li><a href="/works/russian-police-1/">ロシア語警察24時 vol. 1 人名エトセトラ</a> (既刊)</li>
+    </ul>
+
+    <h2>通販その他</h2>
+    <h3>ロシア語警察24時 vol. 1 人名エトセトラ</h3>
+    <ul>
+      <li><ExternalLink href="https://navostoke.booth.pm/items/3652492">通販(BOOTH)</ExternalLink></li>
+      <li><ExternalLink href="https://navostoke.booth.pm/items/3652511">電子版(BOOTH)</ExternalLink></li>
+    </ul>
+  </main>
+</Layout>

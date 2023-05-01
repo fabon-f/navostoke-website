@@ -34,6 +34,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:site" content="@syobon_hinata" />
     { [16,32,48,64].map(s => <link rel="icon" href={`/img/favicon${s}.png`} sizes={`${s}x${s}`} />) }
 		<title>{fullTitle}</title>
+
+    <script src="../script/main.ts"></script>
 	</head>
 	<body>
     <header class="header_nav">

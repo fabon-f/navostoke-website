@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DateExpression from '../components/DateExpression.astro';
+import ExternalLink from '../components/ExternalLink.astro';
+
+import { events } from '../data';
+import { getPastEvents, getFutureEvents } from '../lib/event';
+
+const pastEvents = getPastEvents(events).reverse();
+const futureEvents = getFutureEvents(events);
+---
+
+<Layout title="イベント参加情報" description="過去のものを含む全てのイベント参加情報">
+  <main role="main">
+    <h1>イベント参加情報</h1>
+
+    <section>
+      <h2>今後のサークル参加予定</h2>
+      {
+        futureEvents.map(event => <div>
+          <h3>{event.name} ({event.status})</h3>
+          {event.url && <ExternalLink href={event.url}>イベント公式サイト</ExternalLink>}
+          <p>開催日: <DateExpression date={event.date} /></p>
+          {event.space && <p>スペース: <strong>{event.space}</strong></p>}
+          {event.id && <p><a href={`./${event.id}/`}>イベント参加情報</a></p>}
+        </div>)
+      }
+    </section>
+
+    <section>
+      <h2>過去のサークル参加情報</h2>
+      <ul>
+        {pastEvents.length === 0 ? <p>過去の参加イベントはありません。</p> : pastEvents.map(event => <li>
+          {event.id ? <a href={`./${event.id}/`}>{event.name}</a> : <span>{event.name}</span>} (<DateExpression date={event.date} />)
+        </li>)}
+      </ul>
+    </section>
+  </main>
+</Layout>

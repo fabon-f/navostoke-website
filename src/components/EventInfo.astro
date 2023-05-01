@@ -1,0 +1,16 @@
+---
+import DateExpression from './DateExpression.astro';
+import ExternalLink from './ExternalLink.astro';
+import type { Event } from '../data';
+
+export type Props = {
+  event: Event;
+  headingLevel?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+}
+const { event, headingLevel } = Astro.props;
+const Heading = headingLevel ?? 'h1'
+---
+<Heading>{event.name} ({event.status})</Heading>
+<p>開催日: <DateExpression date={event.date} /></p>
+{event.space && <p>スペース: <strong>{event.space}</strong>{ event.spaceCaveat && ` (${event.spaceCaveat})` }</p>}
+<p>{event.url && <ExternalLink href={event.url}>イベント公式サイト</ExternalLink>}</p>

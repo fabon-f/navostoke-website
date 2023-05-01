@@ -2,10 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import ExternalLink from "../components/ExternalLink.astro";
 import { events, series } from '../data';
-import type { Work } from '../data';
 import { getFutureEvents } from '../lib/event';
-
-const isPublished = (work: Work) => work.publishDate !== null && Date.parse(`${work.publishDate}T00:00:00+0900`) < Date.now()
+import { isPublished } from '../lib/work';
 ---
 
 <Layout title="サークル「ナヴァストーケ」" description="ふぁぼんの個人サークル「ナヴァストーケ」の公式サイト">

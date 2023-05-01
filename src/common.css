@@ -160,15 +160,6 @@ li + li, ul + li, li + ul {
     border: 1px solid #000;
 }
 
-#citation-exporter {
-    margin-top: 3em;
-}
-#citation-exporter textarea {
-    height: 7em;
-    width: 50em;
-    max-width: 90%;
-}
-
 [data-gallery] {
     cursor: zoom-in;
 }

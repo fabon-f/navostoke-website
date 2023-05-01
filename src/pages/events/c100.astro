@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import EventInfo from '../../components/EventInfo.astro';
+import ExternalLink from '../../components/ExternalLink.astro';
+
+import { events } from '../../data';
+import { getEventData } from '../../lib/event';
+const event = getEventData(Astro.url.pathname.split('/')[2]!, events);
+---
+
+<Layout title="コミックマーケット100" description="C100のイベント参加情報">
+  <main>
+    <EventInfo event={event}></EventInfo>
+    <img src="/img/events/c100_circlecut.png" alt="新刊: ロシア語・旧ソ連評論本 既刊: 「ロシア語警察24時」シリーズ" width="635" height="903" class="oshinagaki">
+
+    <h2>告知記事</h2>
+    <ExternalLink href="https://fabon.fanbox.cc/posts/4253130">【全体公開】夏コミの告知 (最終版)</ExternalLink>
+
+    <h2>頒布物</h2>
+    <ul>
+      <li>新刊(コピー本)「ロシア語警察24時 vol.2パイロット版 『月とライカと吸血姫』ロシア語解説」</li>
+      <li><a href="/works/russian-police-1/">ロシア語警察24時 vol. 1 人名エトセトラ</a> (既刊)</li>
+    </ul>
+  </main>
+</Layout>
+
+<style scoped>
+  .oshinagaki {
+    width: 400px;
+    height: auto;
+  }
+</style>

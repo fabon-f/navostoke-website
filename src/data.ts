@@ -34,6 +34,7 @@ export type Event = {
   status: string;
   url?: string;
   space?: string;
+  spaceCaveat?: string;
 };
 
 export const events: Event[] = [
@@ -51,6 +52,7 @@ export const events: Event[] = [
     url: 'https://comiaca.com/catalog20.html',
     status: '当選',
     space: 'C03',
+    spaceCaveat: 'ナヴァストーケ+青葉小路',
     id: 'comiaca20'
   },
   {
@@ -67,6 +69,7 @@ export const events: Event[] = [
     url: 'https://comiaca.com/catalog21.html',
     status: '当選',
     space: 'C02',
+    spaceCaveat: 'ナヴァストーケ+青葉小路',
     id: 'comiaca21'
   }
 ]
