@@ -26,6 +26,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 3f28d3a5c9a4bdc4a451bb2ce2ba89be
-          projectName: fabon
+          projectName: navostoke
           directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
