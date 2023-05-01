@@ -70,79 +70,6 @@ li + li, ul + li, li + ul {
     margin-top: 0.5em;
 }
 
-#center_logo {
-    text-align: center;
-}
-
-#center_logo img {
-    max-width: 100%;
-}
-
-#footer {
-    background-color: #CCC;
-    width: 100%;
-    text-align: center;
-    margin: 20px 0 0;
-}
-
-#footer p {
-    margin: 0;
-    line-height: 2.5;
-    font-size: 80%;
-}
-
-.header_nav {
-    background-color: #c0cdee;
-}
-
-.header_nav_top {
-    padding: 4px;
-}
-
-.header_nav_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.header_nav_inner li {
-    list-style: none;
-}
-
-.header_nav_links {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.header_nav_links li {
-    margin: 0 8px;
-}
-
-.header_nav_links a {
-    color: #333;
-}
-
-.header_nav_links a:hover {
-    color: #000;
-}
-
-
-
-.background-dark {
-    background-color: #161821;
-}
-
-.background-white {
-    background-color: white;
-}
-
-.logo_gallery {
-    display: flex;
-}
-
 .errata th {
     border-width: 0 0 2px;
 }
@@ -174,13 +101,6 @@ li + li, ul + li, li + ul {
     }
     table td, table th {
         border-color: #777;
-    }
-    .header_nav {
-        background-color: #84a0c6;
-    }
-    #footer {
-        background-color: #89b8c2;
-        color: #161821;
     }
     .book-samples li {
         border: 1px solid #FFF;

@@ -8,7 +8,7 @@ import { isPublished } from '../lib/work';
 
 <Layout title="サークル「ナヴァストーケ」" description="ふぁぼんの個人サークル「ナヴァストーケ」の公式サイト">
   <main>
-    <div id="center_logo">
+    <div class="logo">
       <picture>
         <source srcset="/img/logo_dark_saturated.webp" width="772" height="435" type="image/webp" media="(prefers-color-scheme: dark)" />
         <source srcset="/img/logo_dark_saturated.png" width="772" height="435" type="image/png" media="(prefers-color-scheme: dark)" />
@@ -55,3 +55,13 @@ import { isPublished } from '../lib/work';
     </section>
   </main>
 </Layout>
+
+<style scoped>
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+</style>

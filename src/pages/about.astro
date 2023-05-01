@@ -24,7 +24,7 @@ import WebpImage from '../components/WebpImage.astro';
     <section id="special_thanks">
       <h2>Special Thanks</h2>
       <h3>ロゴデザイン: <ExternalLink href="https://awomomiji.tumblr.com">あをもみじ</ExternalLink> さん(サークル「青葉小路」)</h3>
-      <div class="logo_gallery">
+      <div class="logo">
         <figure>
           <WebpImage src="/img/logo" width="257" height="145" alt="ナヴァストーケのアイコン(通常)" class="background-white" />
           <figcaption>通常ロゴ</figcaption>
@@ -48,3 +48,16 @@ import WebpImage from '../components/WebpImage.astro';
   </main>
 </Layout>
 
+<style scoped>
+  .logo {
+    display: flex;
+  }
+
+  .background-dark {
+    background-color: black;
+  }
+
+  .background-white {
+    background-color: white;
+  }
+</style>
