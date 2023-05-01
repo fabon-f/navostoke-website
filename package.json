@@ -15,5 +15,8 @@
     "@zip.js/zip.js": "^2.7.6",
     "astro": "^2.3.2",
     "luminous-lightbox": "^2.4.0"
+  },
+  "devDependencies": {
+    "astro-compress": "^1.1.42"
   }
 }
