@@ -27,6 +27,7 @@ main {
 
 img {
     max-width: 100%;
+    height: auto;
     vertical-align: top;
 }
 
@@ -75,7 +76,6 @@ li + li, ul + li, li + ul {
 
 #center_logo img {
     max-width: 100%;
-    height: auto;
 }
 
 #footer {
