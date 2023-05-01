@@ -1,3 +1,7 @@
+import type { HTMLAttributes } from 'astro/types';
+
+type ImgProps = HTMLAttributes<'img'>;
+
 export type Series = {
   name: string;
   description?: string;
@@ -8,6 +12,7 @@ export type Work = {
   name: string;
   id: string;
   publishDate: string | null;
+  img?: ImgProps;
 };
 
 export const series: Series[] = [
@@ -18,7 +23,13 @@ export const series: Series[] = [
       {
         name: 'vol. 1 人名エトセトラ',
         id: 'russian-police-1',
-        publishDate: '2022-02-20'
+        publishDate: '2022-02-20',
+        img: {
+          src: '/img/works/russian-police-1-cover.png',
+          width: '765',
+          height: '1087',
+          alt: 'ロシア語知識不要! ロシア人キャラの正しい命名法 「ここがおかしい!」 ロシア語的ツッコミ付き 変な名前 傾向と対策'
+        }
       }
     ]
   },
@@ -35,6 +46,7 @@ export type Event = {
   url?: string;
   space?: string;
   spaceCaveat?: string;
+  img?: ImgProps;
 };
 
 export const events: Event[] = [

@@ -14,6 +14,7 @@ import { isPublished } from '../lib/work'
       {series.description && <p>{series.description}</p>}
       {series.works!.map(work => <div>
         <p><a href={`./${work.id}/`}>{work.name}</a>{isPublished(work) ? ` (${work.publishDate!.replaceAll('-', '/')}発行)` : " (未発売)"}</p>
+        { work.img && <p><a href={`./${work.id}/`}><img {...work.img} class="work-cover" /></a></p> }
       </div>)}
     </div>) }
 
@@ -47,3 +48,10 @@ import { isPublished } from '../lib/work'
     </ul>
   </main>
 </Layout>
+
+<style scoped>
+  .work-cover {
+    max-width: 200px;
+    height: auto;
+  }
+</style>

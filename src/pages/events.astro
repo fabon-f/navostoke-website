@@ -23,6 +23,7 @@ const futureEvents = getFutureEvents(events);
           <p>開催日: <DateExpression date={event.date} /></p>
           {event.space && <p>スペース: <strong>{event.space}</strong></p>}
           {event.id && <p><a href={`./${event.id}/`}>イベント参加情報</a></p>}
+          { event.img && <a href={`./${event.id}/`}><img {...event.img} /></a> }
         </div>)
       }
     </section>
