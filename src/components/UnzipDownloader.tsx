@@ -7,6 +7,24 @@ export type Props = {
   item: DownloadItem;
 };
 
+async function sha256sum(str: string) {
+  const buf = new TextEncoder().encode(str);
+  const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', buf)));
+  return digest.map(byte => byte.toString(16).padStart(2, '0')).join('');
+}
+
+async function validatePassword(str: string, hash: string) {
+  // return true if sha256sum function doesn't work properly
+  try {
+    if (await sha256sum('a') !== 'ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb') {
+      return true;
+    }
+  } catch {
+    return true;
+  }
+  return await sha256sum(str) === hash
+}
+
 async function download(url: string, password: string) {
   const downloadUrl = new URL(url, location.href).toString();
   const reader = new ZipReader(new HttpReader(downloadUrl));
@@ -35,9 +53,14 @@ export default function UnzipDownloader({ item }: Props) {
   const [infoMessage, setInfoMessage] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
   const handleClick = async () => {
+    setInfoMessage('ダウンロード中……');
+    setErrorMessage('');
+    if (!await validatePassword(password, item.passwordHash)) {
+      setInfoMessage('');
+      setErrorMessage('パスワードが間違っています。');
+      return;
+    }
     try {
-      setInfoMessage('ダウンロード中……');
-      setErrorMessage('');
       await download(item.archive, password);
       setInfoMessage('');
     } catch (e: any) {
