@@ -19,6 +19,9 @@
     "preact": "^10.13.2"
   },
   "devDependencies": {
-    "astro-compress": "^1.1.42"
+    "@markuplint/astro-parser": "^3.6.3",
+    "@markuplint/jsx-parser": "^3.6.2",
+    "astro-compress": "^1.1.42",
+    "markuplint": "^3.9.1"
   }
 }

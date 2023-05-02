@@ -1,0 +1,8 @@
+{
+  "parser": {
+    "\\.[jt]sx?$": "@markuplint/jsx-parser",
+    "\\.astro$": "@markuplint/astro-parser"
+  },
+  "extends": ["markuplint:recommended"],
+  "rules": {}
+}
