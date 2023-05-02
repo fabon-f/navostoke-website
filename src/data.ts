@@ -108,7 +108,7 @@ export const downloads: DownloadItem[] = [
     archive: '/archives/ruspolice1_e.zip',
     encrypted: true,
     extractOnWeb: true,
-    img: { src: '/img/works/russian-police-1-cover.png', width: '765', height: '1087' },
+    img: { src: '/img/works/russian-police-1-cover.png', width: '765', height: '1087', alt: '' },
     passwordHash: 'f2db474462ff118710368a5ded2d8229d6dd39bafe8858c79f7118862029199a'
   }
 ]

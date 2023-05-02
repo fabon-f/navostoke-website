@@ -11,7 +11,7 @@ const futureEvents = getFutureEvents(events);
 ---
 
 <Layout title="イベント参加情報" description="過去のものを含む全てのイベント参加情報">
-  <main role="main">
+  <main>
     <h1>イベント参加情報</h1>
 
     <section>
@@ -23,7 +23,7 @@ const futureEvents = getFutureEvents(events);
           <p>開催日: <DateExpression date={event.date} /></p>
           {event.space && <p>スペース: <strong>{event.space}</strong></p>}
           {event.id && <p><a href={`./${event.id}/`}>イベント参加情報</a></p>}
-          { event.img && <a href={`./${event.id}/`}><img {...event.img} /></a> }
+          { event.img && <a href={`./${event.id}/`}><img decoding="async" {...event.img} /></a> }
         </div>)
       }
     </section>

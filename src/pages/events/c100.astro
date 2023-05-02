@@ -11,7 +11,7 @@ const event = getEventData(Astro.url.pathname.split('/')[2]!, events);
 <Layout title="コミックマーケット100" description="C100のイベント参加情報">
   <main>
     <EventInfo event={event}></EventInfo>
-    <img src="/img/events/c100_circlecut.png" alt="新刊: ロシア語・旧ソ連評論本 既刊: 「ロシア語警察24時」シリーズ" width="635" height="903" class="oshinagaki">
+    <img src="/img/events/c100_circlecut.png" alt="新刊: ロシア語・旧ソ連評論本 既刊: 「ロシア語警察24時」シリーズ" width="635" height="903" class="oshinagaki" decoding="async">
 
     <h2>告知記事</h2>
     <ExternalLink href="https://fabon.fanbox.cc/posts/4253130">【全体公開】夏コミの告知 (最終版)</ExternalLink>
