@@ -14,7 +14,7 @@ const siteName = 'ナヴァストーケ';
 const defaultDescription = 'サークル「ナヴァストーケ」の公式サイト';
 const description = Astro.props.description || defaultDescription;
 const fullTitle = title ? `${title} | ${siteName}` : siteName;
-const ogImageUrl = new URL(Astro.props.ogImage ?? '/img/logo.png', Astro.site);
+const ogImageUrl = new URL(Astro.props.ogImage ?? '/img/ogimage.png', Astro.site);
 const twitterCardType = Astro.props.twitterCardType || 'summary_large_image';
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
