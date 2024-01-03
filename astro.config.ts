@@ -6,7 +6,7 @@ import compress from 'astro-compress';
 // https://astro.build/config
 export default defineConfig({
   integrations: [preact(), sitemap(), compress({
-    css: false, html: true, img: false, js: false, svg: false, logger: 0
+    CSS: false, HTML: true, Image: false, JavaScript: false, SVG: false, Logger: 0
   })],
   site: "https://navostoke.fabon.info"
 });
