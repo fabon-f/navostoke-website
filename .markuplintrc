@@ -1,4 +1,7 @@
 {
+  "specs": {
+    "\\.[jt]sx$": "@markuplint/react-spec"
+  },
   "parser": {
     "\\.[jt]sx?$": "@markuplint/jsx-parser",
     "\\.astro$": "@markuplint/astro-parser"
