@@ -30,11 +30,11 @@ const futureEvents = getFutureEvents(events);
 
     <section>
       <h2>過去のサークル参加情報</h2>
-      <ul>
-        {pastEvents.length === 0 ? <p>過去の参加イベントはありません。</p> : pastEvents.map(event => <li>
+      {pastEvents.length === 0 ? <p>過去の参加イベントはありません。</p> : <ul>
+        { pastEvents.map(event => <li>
           {event.id ? <a href={`./${event.id}/`}>{event.name}</a> : <span>{event.name}</span>} (<DateExpression date={event.date} />)
-        </li>)}
-      </ul>
+        </li>) }
+      </ul>}
     </section>
   </main>
 </Layout>
