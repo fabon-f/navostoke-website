@@ -33,6 +33,9 @@ importers:
       '@markuplint/jsx-parser':
         specifier: ^4.7.4
         version: 4.7.4(typescript@5.4.5)
+      '@markuplint/react-spec':
+        specifier: ^4.5.4
+        version: 4.5.4
       astro-compress:
         specifier: ^2.2.28
         version: 2.2.28(@types/node@20.14.2)(typescript@5.4.5)
@@ -502,6 +505,9 @@ packages:
 
   '@markuplint/parser-utils@4.6.4':
     resolution: {integrity: sha512-ODcwfIEBrB2ufZPbB4zxg9cUDSy7rOzsYIQH2yIhHPGyz/gBgpE3QY4OU/AHsIK4Qxsibc4kJHmnUX0EvTURdw==}
+
+  '@markuplint/react-spec@4.5.4':
+    resolution: {integrity: sha512-OamKNOcLIZ4hn9PUYRqQICp8dwVNgW09+Z9H71TEemZQ9t9Ir8SfTz6lyCpy6eIkq4pkZz5y4fnCHD3CLc8cRg==}
 
   '@markuplint/rules@4.9.2':
     resolution: {integrity: sha512-ThoZZRigQ4jYt9D8AnzsfKJXVMYJm3pBEdpzLOSQIxlNtSnt9O2EtoTtyN4O6fHRicBasr2WFZpU3Ea1Aky5SA==}
@@ -3084,6 +3090,12 @@ snapshots:
       espree: 10.0.1
       type-fest: 4.20.0
       uuid: 9.0.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@markuplint/react-spec@4.5.4':
+    dependencies:
+      '@markuplint/ml-spec': 4.6.2
     transitivePeerDependencies:
       - supports-color
 

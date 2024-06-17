@@ -21,6 +21,7 @@
   "devDependencies": {
     "@markuplint/astro-parser": "^4.6.4",
     "@markuplint/jsx-parser": "^4.7.4",
+    "@markuplint/react-spec": "^4.5.4",
     "astro-compress": "^2.2.28",
     "markuplint": "^4.9.1"
   }
