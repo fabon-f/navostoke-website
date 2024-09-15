@@ -11,18 +11,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^3.5.1",
+    "@astrojs/preact": "^3.5.3",
     "@astrojs/sitemap": "^3.1.6",
-    "@zip.js/zip.js": "^2.7.48",
-    "astro": "^4.14.2",
+    "@zip.js/zip.js": "^2.7.52",
+    "astro": "^4.15.6",
     "luminous-lightbox": "^2.4.0",
-    "preact": "^10.23.2"
+    "preact": "^10.24.0"
   },
   "devDependencies": {
-    "@markuplint/astro-parser": "^4.6.5",
-    "@markuplint/jsx-parser": "^4.7.5",
-    "@markuplint/react-spec": "^4.5.5",
+    "@markuplint/astro-parser": "^4.6.6",
+    "@markuplint/jsx-parser": "^4.7.6",
+    "@markuplint/react-spec": "^4.5.6",
     "astro-compress": "^2.3.1",
-    "markuplint": "^4.9.2"
+    "markuplint": "^4.9.3"
   }
 }
