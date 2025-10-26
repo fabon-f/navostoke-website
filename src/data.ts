@@ -41,7 +41,7 @@ export const series: Series[] = [
 export type Event = {
   name: string;
   date: string;
-  id: string;
+  id?: string;
   status: string;
   url?: string;
   space?: string;
@@ -83,6 +83,20 @@ export const events: Event[] = [
     space: 'C02',
     spaceCaveat: 'ナヴァストーケ+青葉小路',
     id: 'comiaca21'
+  },
+  {
+    name: 'コミックアカデミー23',
+    date: '2023-11-25/2023-11-26',
+    url: 'https://comiaca.com/ca23/catalog/',
+    status: '当選',
+    space: '委託'
+  },
+  {
+    name: 'コミックアカデミー26',
+    date: '2025-05-24/2025-05-25',
+    url: 'https://comiaca.com/ca26/catalog/',
+    status: '当選',
+    space: '委託'
   }
 ]
 
