@@ -19,7 +19,7 @@ importers:
         version: 2.8.8
       astro:
         specifier: ^5.15.1
-        version: 5.15.1(@types/node@24.9.1)(lightningcss@1.29.3)(rollup@4.52.5)(terser@5.39.0)(typescript@5.6.2)
+        version: 5.15.1(@types/node@24.9.1)(lightningcss@1.29.3)(rollup@4.52.5)(terser@5.39.0)(typescript@5.9.3)
       luminous-lightbox:
         specifier: ^2.4.0
         version: 2.4.0
@@ -32,16 +32,16 @@ importers:
         version: 4.6.21
       '@markuplint/jsx-parser':
         specifier: ^4.7.21
-        version: 4.7.21(typescript@5.6.2)
+        version: 4.7.21(typescript@5.9.3)
       '@markuplint/react-spec':
         specifier: ^4.5.21
         version: 4.5.21
       astro-compress:
         specifier: ^2.3.8
-        version: 2.3.8(@types/node@24.9.1)(rollup@4.52.5)(typescript@5.6.2)
+        version: 2.3.8(@types/node@24.9.1)(rollup@4.52.5)(typescript@5.9.3)
       markuplint:
         specifier: ^4.13.1
-        version: 4.13.1(typescript@5.6.2)
+        version: 4.13.1(typescript@5.9.3)
 
 packages:
 
@@ -2357,8 +2357,8 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
-  typescript@5.6.2:
-    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3142,7 +3142,7 @@ snapshots:
 
   '@markuplint/config-presets@4.5.13': {}
 
-  '@markuplint/file-resolver@4.9.16(typescript@5.6.2)':
+  '@markuplint/file-resolver@4.9.16(typescript@5.9.3)':
     dependencies:
       '@markuplint/html-parser': 4.6.21
       '@markuplint/ml-ast': 4.4.10
@@ -3152,7 +3152,7 @@ snapshots:
       '@markuplint/parser-utils': 4.8.9
       '@markuplint/selector': 4.7.6
       '@markuplint/shared': 4.4.12
-      cosmiconfig: 9.0.0(typescript@5.6.2)
+      cosmiconfig: 9.0.0(typescript@5.9.3)
       debug: 4.4.1
       glob: 11.0.3
       ignore: 7.0.5
@@ -3180,13 +3180,13 @@ snapshots:
 
   '@markuplint/i18n@4.7.0': {}
 
-  '@markuplint/jsx-parser@4.7.21(typescript@5.6.2)':
+  '@markuplint/jsx-parser@4.7.21(typescript@5.9.3)':
     dependencies:
       '@markuplint/html-parser': 4.6.21
       '@markuplint/ml-ast': 4.4.10
       '@markuplint/parser-utils': 4.8.9
       '@typescript-eslint/types': 8.40.0
-      '@typescript-eslint/typescript-estree': 8.40.0(typescript@5.6.2)
+      '@typescript-eslint/typescript-estree': 8.40.0(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3540,12 +3540,12 @@ snapshots:
 
   '@types/whatwg-mimetype@3.0.2': {}
 
-  '@typescript-eslint/project-service@8.40.0(typescript@5.6.2)':
+  '@typescript-eslint/project-service@8.40.0(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.6.2)
+      '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.9.3)
       '@typescript-eslint/types': 8.40.0
       debug: 4.4.3
-      typescript: 5.6.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
@@ -3554,18 +3554,18 @@ snapshots:
       '@typescript-eslint/types': 8.46.2
       '@typescript-eslint/visitor-keys': 8.46.2
 
-  '@typescript-eslint/tsconfig-utils@8.40.0(typescript@5.6.2)':
+  '@typescript-eslint/tsconfig-utils@8.40.0(typescript@5.9.3)':
     dependencies:
-      typescript: 5.6.2
+      typescript: 5.9.3
 
   '@typescript-eslint/types@8.40.0': {}
 
   '@typescript-eslint/types@8.46.2': {}
 
-  '@typescript-eslint/typescript-estree@8.40.0(typescript@5.6.2)':
+  '@typescript-eslint/typescript-estree@8.40.0(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/project-service': 8.40.0(typescript@5.6.2)
-      '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.6.2)
+      '@typescript-eslint/project-service': 8.40.0(typescript@5.9.3)
+      '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.9.3)
       '@typescript-eslint/types': 8.40.0
       '@typescript-eslint/visitor-keys': 8.40.0
       debug: 4.4.3
@@ -3573,8 +3573,8 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 9.0.5
       semver: 7.7.3
-      ts-api-utils: 2.1.0(typescript@5.6.2)
-      typescript: 5.6.2
+      ts-api-utils: 2.1.0(typescript@5.9.3)
+      typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
@@ -3627,12 +3627,12 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro-compress@2.3.8(@types/node@24.9.1)(rollup@4.52.5)(typescript@5.6.2):
+  astro-compress@2.3.8(@types/node@24.9.1)(rollup@4.52.5)(typescript@5.9.3):
     dependencies:
       '@playform/pipe': 0.1.3
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 5.15.1(@types/node@24.9.1)(lightningcss@1.29.3)(rollup@4.52.5)(terser@5.39.0)(typescript@5.6.2)
+      astro: 5.15.1(@types/node@24.9.1)(lightningcss@1.29.3)(rollup@4.52.5)(terser@5.39.0)(typescript@5.9.3)
       commander: 13.1.0
       csso: 5.0.5
       deepmerge-ts: 7.1.5
@@ -3693,7 +3693,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.15.1(@types/node@24.9.1)(lightningcss@1.29.3)(rollup@4.52.5)(terser@5.39.0)(typescript@5.6.2):
+  astro@5.15.1(@types/node@24.9.1)(lightningcss@1.29.3)(rollup@4.52.5)(terser@5.39.0)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.4
@@ -3743,7 +3743,7 @@ snapshots:
       smol-toml: 1.4.2
       tinyexec: 1.0.1
       tinyglobby: 0.2.15
-      tsconfck: 3.1.6(typescript@5.6.2)
+      tsconfck: 3.1.6(typescript@5.9.3)
       ultrahtml: 1.6.0
       unifont: 0.6.0
       unist-util-visit: 5.0.0
@@ -3756,7 +3756,7 @@ snapshots:
       yocto-spinner: 0.2.3
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
-      zod-to-ts: 1.2.0(typescript@5.6.2)(zod@3.25.76)
+      zod-to-ts: 1.2.0(typescript@5.9.3)(zod@3.25.76)
     optionalDependencies:
       sharp: 0.34.4
     transitivePeerDependencies:
@@ -3931,14 +3931,14 @@ snapshots:
 
   cookie@1.0.2: {}
 
-  cosmiconfig@9.0.0(typescript@5.6.2):
+  cosmiconfig@9.0.0(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
       js-yaml: 4.1.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.6.2
+      typescript: 5.9.3
 
   cross-spawn@7.0.6:
     dependencies:
@@ -4536,10 +4536,10 @@ snapshots:
 
   markdown-table@3.0.4: {}
 
-  markuplint@4.13.1(typescript@5.6.2):
+  markuplint@4.13.1(typescript@5.9.3):
     dependencies:
       '@markuplint/cli-utils': 4.4.12
-      '@markuplint/file-resolver': 4.9.16(typescript@5.6.2)
+      '@markuplint/file-resolver': 4.9.16(typescript@5.9.3)
       '@markuplint/html-parser': 4.6.21
       '@markuplint/html-spec': 4.16.0
       '@markuplint/i18n': 4.7.0
@@ -5410,19 +5410,19 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-api-utils@2.1.0(typescript@5.6.2):
+  ts-api-utils@2.1.0(typescript@5.9.3):
     dependencies:
-      typescript: 5.6.2
+      typescript: 5.9.3
 
-  tsconfck@3.1.6(typescript@5.6.2):
+  tsconfck@3.1.6(typescript@5.9.3):
     optionalDependencies:
-      typescript: 5.6.2
+      typescript: 5.9.3
 
   tslib@2.8.1: {}
 
   type-fest@4.41.0: {}
 
-  typescript@5.6.2: {}
+  typescript@5.9.3: {}
 
   ufo@1.6.1: {}
 
@@ -5620,9 +5620,9 @@ snapshots:
     dependencies:
       zod: 3.25.76
 
-  zod-to-ts@1.2.0(typescript@5.6.2)(zod@3.25.76):
+  zod-to-ts@1.2.0(typescript@5.9.3)(zod@3.25.76):
     dependencies:
-      typescript: 5.6.2
+      typescript: 5.9.3
       zod: 3.25.76
 
   zod@3.25.76: {}
