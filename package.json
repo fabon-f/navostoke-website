@@ -8,6 +8,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "astro": "astro"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "preact": "^10.27.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.5",
     "@markuplint/astro-parser": "^4.6.21",
     "@markuplint/jsx-parser": "^4.7.21",
     "@markuplint/react-spec": "^4.5.21",
