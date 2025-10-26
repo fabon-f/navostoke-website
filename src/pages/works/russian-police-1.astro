@@ -7,10 +7,9 @@ import type { Props as CitationProps } from '../../components/CitationExporter.a
 
 import { series } from '../../data';
 import { getBookData, isPublished } from '../../lib/work';
+import DateExpression from '../../components/DateExpression.astro';
 
 const book = getBookData(Astro.url.pathname.split('/')[2]!, series)
-
-const formatDate = (date: string) => date.replaceAll('-', '/');
 
 const title = 'ロシア語警察24時 vol. 1 人名エトセトラ';
 const citationInfo: CitationProps = {
@@ -69,7 +68,7 @@ const citationInfo: CitationProps = {
     <table class="book-info">
       <tbody>
         <tr><th>タイトル</th><td>{title}</td></tr>
-        <tr><th>発行日</th><td>{book.publishDate ? formatDate(book.publishDate) : '未定'}</td></tr>
+        <tr><th>発行日</th><td>{book.publishDate ? <DateExpression date={book.publishDate} /> : '未定'}</td></tr>
         <tr><th>体裁</th><td>B5サイズ、24ページ、本文グレースケール</td></tr>
         <tr><th>ISDN</th><td><ExternalLink href="https://isdn.jp/2784548637017">278-4-548637-01-7</ExternalLink></td></tr>
       </tbody>

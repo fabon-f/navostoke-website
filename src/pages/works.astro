@@ -4,6 +4,7 @@ import ExternalLink from '../components/ExternalLink.astro';
 
 import { series } from '../data';
 import { isPublished } from '../lib/work'
+import DateExpression from '../components/DateExpression.astro';
 ---
 
 <Layout title="作品一覧" description="作品の一覧ページ">
@@ -13,7 +14,7 @@ import { isPublished } from '../lib/work'
       <h2>{ series.name }</h2>
       {series.description && <p>{series.description}</p>}
       {series.works!.map(work => <div>
-        <p><a href={`./${work.id}/`}>{work.name}</a>{isPublished(work) ? ` (${work.publishDate!.replaceAll('-', '/')}発行)` : " (未発売)"}</p>
+        <p><a href={`./${work.id}/`}>{work.name}</a>{isPublished(work) ? <> (<DateExpression date={work.publishDate!} />発行)</> : " (未発売)"}</p>
         { work.img && <p><a href={`./${work.id}/`}><img {...work.img} class="work-cover" /></a></p> }
       </div>)}
     </div>) }
