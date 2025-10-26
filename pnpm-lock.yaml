@@ -42,6 +42,9 @@ importers:
       markuplint:
         specifier: ^4.13.1
         version: 4.13.1(typescript@5.9.3)
+      typescript:
+        specifier: 5.9.3
+        version: 5.9.3
 
 packages:
 
