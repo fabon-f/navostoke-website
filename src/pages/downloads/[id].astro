@@ -33,7 +33,7 @@ const title = `${item.title} ダウンロード`;
 <Layout title={title} ogImage={item.ogImage}>
   <main>
     <h1>{item.title}<br/>ダウンロードページ</h1>
-    { item.img && <img decoding="async" {...item.img} class="img" /> }
+    { item.img && <img {...item.img} class="img" /> }
 
     {
       item.extractOnWeb && <UnzipDownloader item={item} client:load />

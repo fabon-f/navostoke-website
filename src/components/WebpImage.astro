@@ -7,4 +7,4 @@ export type Props = HTMLAttributes<'img'> & {
 const { src, width, height } = Astro.props;
 const imgProps = Object.assign({}, Astro.props, { src: `${src}.png` });
 ---
-<picture><source srcset={`${src}.webp`} width={width} height={height} type="image/webp" /><source srcset={`${src}.png`} width={width} height={height} type="image/png" /><img decoding="async" {...imgProps} /></picture>
+<picture><source srcset={`${src}.webp`} width={width} height={height} type="image/webp" /><source srcset={`${src}.png`} width={width} height={height} type="image/png" /><img {...imgProps} /></picture>
