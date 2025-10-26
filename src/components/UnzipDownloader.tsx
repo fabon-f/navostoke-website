@@ -34,7 +34,7 @@ async function download(url: string, password: string) {
   document.body.appendChild(a);
   if (entries.length < 3) {
     for (const entry of entries) {
-      if (!entry.getData) { continue; }
+      if (entry.directory) { continue; }
       const data = await entry.getData(new BlobWriter(), {
         password
       });
