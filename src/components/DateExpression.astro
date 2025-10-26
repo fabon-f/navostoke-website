@@ -7,5 +7,5 @@ const date = Astro.props.date
 const formatDate = (date: string) => date.replaceAll('-', '/')
 ---
 {
-  date.includes('/') ? <span><Astro.self date={date.split('/')[0]} />〜<Astro.self date={date.split('/')[1]} /></span> : <time datetime={date}>{`${formatDate(date)}`}</time>
+  date.includes('/') ? <span><Astro.self date={date.split('/')[0]!} />〜<Astro.self date={date.split('/')[1]!} /></span> : <time datetime={date}>{`${formatDate(date)}`}</time>
 }
