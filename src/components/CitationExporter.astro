@@ -1,17 +1,19 @@
 ---
+import { Temporal } from 'temporal-polyfill'
+
 export type Props = {
   bookId: string,
   author?: string,
   title: string,
   publisher?: string,
   bookUrl: string | URL,
-  publishDate: string | Date,
+  publishDate: string,
   series?: string,
   number?: string
 };
 
 const props = Astro.props;
-const date = (typeof props.publishDate === 'string' ? new Date(props.publishDate) : props.publishDate)
+const date = (typeof props.publishDate === 'string' ? Temporal.PlainDate.from(props.publishDate) : props.publishDate)
 
 const bibtexCitation = `@book { navostoke-${props.bookId},
 author = "${props.author || "ふぁぼん"}",
@@ -19,7 +21,7 @@ title = "${props.title}",
 ${props.series ? `series = "${props.series}",` : ""}
 ${props.number ? `number = "${props.number}",` : ""}
 publisher = "${props.publisher || "ナヴァストーケ"}",
-year = "${date.getFullYear()}",
+year = "${date.year}",
 URL = "${props.bookUrl}"
 }`.replace(/\n+/g, "\n");
 ---

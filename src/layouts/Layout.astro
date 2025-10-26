@@ -1,4 +1,5 @@
 ---
+import { Temporal } from 'temporal-polyfill'
 import '../common.css';
 import ExternalLink from '../components/ExternalLink.astro';
 
@@ -17,6 +18,7 @@ const fullTitle = title ? `${title} | ${siteName}` : siteName;
 const ogImageUrl = new URL(Astro.props.ogImage ?? '/img/ogimage.png', Astro.site);
 const twitterCardType = Astro.props.twitterCardType || 'summary_large_image';
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const year = Temporal.Now.zonedDateTimeISO('Asia/Tokyo').year;
 ---
 
 <!DOCTYPE html>
@@ -55,7 +57,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <slot />
     <footer>
       <div id="footer">
-          <p>© 2021-{new Date().getFullYear()} ナヴァストーケ «на востоке»</p>
+          <p>© 2021-{year} ナヴァストーケ «на востоке»</p>
       </div>
     </footer>
 	</body>

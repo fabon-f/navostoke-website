@@ -1,11 +1,14 @@
 ---
+import { Temporal } from 'temporal-polyfill'
+
 export type Props = {
   date: string;
 };
 const date = Astro.props.date
 
-const formatDate = (date: string) => date.replaceAll('-', '/')
+const canonicalDate = (date: string) => Temporal.PlainDate.from(date).toString()
+const formatDate = (date: string) => Temporal.PlainDate.from(date).toLocaleString('ja-JP', { dateStyle: 'short' })
 ---
 {
-  date.includes('/') ? <span><Astro.self date={date.split('/')[0]!} />〜<Astro.self date={date.split('/')[1]!} /></span> : <time datetime={date}>{`${formatDate(date)}`}</time>
+  date.includes('/') ? <span><Astro.self date={date.split('/')[0]!} />〜<Astro.self date={date.split('/')[1]!} /></span> : <time datetime={canonicalDate(date)}>{formatDate(date)}</time>
 }

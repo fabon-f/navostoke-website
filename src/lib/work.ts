@@ -1,6 +1,11 @@
+import { Temporal } from 'temporal-polyfill'
+import { isBefore } from 'vremel'
+
 import type { Work, Series } from '../data'
 
-export const isPublished = (work: Work) => work.publishDate !== null && Date.parse(`${work.publishDate}T00:00:00+0900`) < Date.now()
+export const isPublished = (work: Work) =>
+  work.publishDate !== null &&
+  isBefore(Temporal.PlainDate.from(work.publishDate).toZonedDateTime("Asia/Tokyo"), Temporal.Now.zonedDateTimeISO())
 
 export function getBookData(id: string, series: Series[]) {
   for (const s of series) {
