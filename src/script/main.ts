@@ -19,11 +19,11 @@ for (const elem of document.querySelectorAll("a[data-gallery]")) {
   }
 }
 
-for (const [_key, elems] of Object.entries(table)) {
+for (const elems of Object.values(table)) {
   elems.length == 1 ? new Luminous(elems[0]!) : new LuminousGallery(elems);
 }
 
-const readOnlyTextareas = Array.from(document.querySelectorAll('textarea[readonly]'));
+const readOnlyTextareas = Array.from(document.querySelectorAll('textarea:read-only'));
 for (const textarea of readOnlyTextareas) {
   if (!(textarea instanceof HTMLTextAreaElement)) { throw new Error(); }
   textarea.addEventListener('click', () => {
