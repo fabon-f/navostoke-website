@@ -1,4 +1,4 @@
-import { Temporal } from 'temporal-polyfill'
+import { Temporal } from 'temporal-polyfill-lite'
 import { endOfDay, isAfter } from 'vremel';
 import type { Event } from '../data';
 
