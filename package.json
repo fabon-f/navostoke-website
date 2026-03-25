@@ -12,27 +12,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^5.0.0",
+    "@astrojs/preact": "^5.0.2",
     "@astrojs/sitemap": "^3.7.1",
     "@zip.js/zip.js": "^2.8.23",
-    "astro": "^6.0.2",
+    "astro": "^6.0.8",
     "luminous-lightbox": "^2.4.0",
     "preact": "^10.29.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.7",
+    "@astrojs/check": "^0.9.8",
     "@markuplint/astro-parser": "^4.6.23",
     "@markuplint/jsx-parser": "^4.7.23",
     "@markuplint/react-spec": "^4.5.23",
     "markuplint": "^4.14.1",
-    "temporal-polyfill-lite": "^0.2.3",
+    "temporal-polyfill-lite": "^0.3.3",
     "typescript": "5.9.3",
     "vremel": "^0.6.2"
   },
   "pnpm": {
     "overrides": {
-      "vite": "8.0.0-beta.18"
+      "vite": "^8.0.2"
     }
   },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@10.33.0"
 }
