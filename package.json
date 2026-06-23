@@ -12,27 +12,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^5.0.2",
-    "@astrojs/sitemap": "^3.7.1",
-    "@zip.js/zip.js": "^2.8.23",
-    "astro": "^6.0.8",
+    "@astrojs/preact": "^6.0.0",
+    "@astrojs/sitemap": "^3.7.3",
+    "@zip.js/zip.js": "^2.8.26",
+    "astro": "^7.0.0",
     "luminous-lightbox": "^2.4.0",
-    "preact": "^10.29.0"
+    "preact": "^10.29.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@markuplint/astro-parser": "^4.6.23",
-    "@markuplint/jsx-parser": "^4.7.23",
-    "@markuplint/react-spec": "^4.5.23",
-    "markuplint": "^4.14.1",
-    "temporal-polyfill-lite": "^0.3.3",
-    "typescript": "5.9.3",
+    "@astrojs/check": "^0.9.9",
+    "@markuplint/astro-parser": "^4.18.3",
+    "@markuplint/jsx-parser": "^4.18.3",
+    "@markuplint/react-spec": "^4.18.0",
+    "markuplint": "^4.18.3",
+    "temporal-polyfill-lite": "^0.4.1",
+    "typescript": "6.0.3",
     "vremel": "^0.6.2"
   },
-  "pnpm": {
-    "overrides": {
-      "vite": "^8.0.2"
-    }
-  },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@11.8.0"
 }
