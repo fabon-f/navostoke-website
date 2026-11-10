@@ -12,22 +12,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^6.0.5",
+    "@astrojs/preact": "^6.1.2",
     "@astrojs/sitemap": "^3.7.4",
-    "@zip.js/zip.js": "^2.15.0",
-    "astro": "^7.3.2",
+    "@zip.js/zip.js": "^2.24.0",
+    "astro": "^7.4.8",
     "luminous-lightbox": "^2.4.0",
-    "preact": "^10.29.8"
+    "preact": "^11.2.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
-    "@markuplint/astro-parser": "^5.0.0",
-    "@markuplint/jsx-parser": "^5.0.0",
-    "@markuplint/react-spec": "^5.0.0",
-    "markuplint": "^5.0.0",
-    "temporal-polyfill-lite": "^0.4.3",
+    "@astrojs/check": "^0.9.12",
+    "@markuplint/astro-parser": "^5.4.0",
+    "@markuplint/jsx-parser": "^5.4.0",
+    "@markuplint/react-spec": "^5.4.0",
+    "markuplint": "^5.4.0",
+    "temporal-polyfill-lite": "^1.0.1",
     "typescript": "6.0.3",
-    "vremel": "^0.6.2"
+    "vremel": "^0.7.0"
   },
-  "packageManager": "pnpm@12.4.2"
+  "packageManager": "pnpm@12.18.0"
 }
