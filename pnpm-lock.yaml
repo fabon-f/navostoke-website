@@ -200,9 +200,6 @@ importers:
       markuplint:
         specifier: ^5.4.0
         version: 5.4.0(@typescript-eslint/types@8.72.1)(eslint@10.14.0)
-      temporal-polyfill-lite:
-        specifier: ^1.0.1
-        version: 1.0.1
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -2534,9 +2531,6 @@ packages:
   tagged-tag@1.0.0:
     resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
     engines: {node: '>=20'}
-
-  temporal-polyfill-lite@1.0.1:
-    resolution: {integrity: sha512-uXUfW8sdaal9FZebZHj1hTZ3Biotl3P2rHJoR1lvLLqe+/8SbKr5QomCa7bSAEQxO7dJHyWiLM2k16fP1J3Lfw==}
 
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
@@ -5956,8 +5950,6 @@ snapshots:
       sax: 1.6.1
 
   tagged-tag@1.0.0: {}
-
-  temporal-polyfill-lite@1.0.1: {}
 
   tiny-inflate@1.0.3: {}
 

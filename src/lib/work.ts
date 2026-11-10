@@ -1,4 +1,3 @@
-import { Temporal } from 'temporal-polyfill-lite'
 import { isBefore } from 'vremel'
 
 import type { Work, Series } from '../data'

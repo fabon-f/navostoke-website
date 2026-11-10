@@ -25,7 +25,6 @@
     "@markuplint/jsx-parser": "^5.4.0",
     "@markuplint/react-spec": "^5.4.0",
     "markuplint": "^5.4.0",
-    "temporal-polyfill-lite": "^1.0.1",
     "typescript": "6.0.3",
     "vremel": "^0.7.0"
   },
